@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>沈安恒</title>
+  
+  <subtitle>前端外卖小哥</subtitle>
+  <link href="/shenanheng/shenanheng.coding.me/atom.xml" rel="self"/>
+  
+  <link href="https://gitee.com/shenanheng/shenanheng.coding.me/"/>
+  <updated>2019-03-07T09:17:46.024Z</updated>
+  <id>https://gitee.com/shenanheng/shenanheng.coding.me/</id>
+  
+  <author>
+    <name>沈安恒</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js中的事件</title>
+    <link href="https://gitee.com/shenanheng/shenanheng.coding.me/2018/01/06/web/js/js-zhong-de-shi-jian/"/>
+    <id>https://gitee.com/shenanheng/shenanheng.coding.me/2018/01/06/web/js/js-zhong-de-shi-jian/</id>
+    <published>2018-01-06T05:00:00.000Z</published>
+    <updated>2019-03-07T09:17:46.024Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;事件&quot;&gt;&lt;a href=&quot;#事件&quot; class=&quot;headerlink&quot; title=&quot;事件&quot;&gt;&lt;/a&gt;&lt;center&gt;事件&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;事件中的名词&quot;&gt;&lt;a href=&quot;#事件中的名词&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://gitee.com/shenanheng/shenanheng.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="https://gitee.com/shenanheng/shenanheng.coding.me/tags/js/"/>
+    
+  </entry>
+  
+</feed>
