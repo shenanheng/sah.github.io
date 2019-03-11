@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shenah.coding.me/sah.coding.me/"/>
-  <updated>2019-03-07T09:17:46.024Z</updated>
+  <updated>2019-03-11T01:24:04.232Z</updated>
   <id>https://shenah.coding.me/sah.coding.me/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>js中的事件</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/01/06/web/js/js-zhong-de-shi-jian/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/01/06/web/js/js-zhong-de-shi-jian/</id>
+    <title>事件轮询</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/01/14/web/js/shi-jian-lun-xun/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/01/14/web/js/shi-jian-lun-xun/</id>
+    <published>2018-01-14T07:48:32.000Z</published>
+    <updated>2019-03-11T01:24:04.232Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;事件轮询&quot;&gt;&lt;a href=&quot;#事件轮询&quot; class=&quot;headerlink&quot; title=&quot;事件轮询&quot;&gt;&lt;/a&gt;&lt;center&gt;事件轮询&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;解释&quot;&gt;&lt;a href=&quot;#解释&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>事件</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/01/06/web/js/shi-jian/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/01/06/web/js/shi-jian/</id>
     <published>2018-01-06T05:00:00.000Z</published>
-    <updated>2019-03-07T09:17:46.024Z</updated>
+    <updated>2019-03-11T01:11:52.501Z</updated>
     
     <summary type="html">
     
