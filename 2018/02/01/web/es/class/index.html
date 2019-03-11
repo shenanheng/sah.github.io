@@ -4,12 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="事件轮询, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
-    <meta name="description" content="事件轮询解释　　主线程从任务队列中读取事件，这个过程是循环不断的。
-　　所有任务都可以分为:同步任务(都在主线程)与异步任务(任务队列中)。
-运行的机制
-所有同步任务都在主线程上执行，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。
-">
+    <meta name="keywords" content="class, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
+    <meta name="description" content="Class定义　　ES6的class是一种语法糖
+定义类
+class类中方法以及构造器中没有逗号分隔
+typeof Point  =&amp;gt; function 是函数
+Point =&amp;gt; Point.prototype.construc">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>事件轮询 | 沈安恒</title>
+    <title>class | 沈安恒</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -265,13 +265,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        事件轮询
+                        class
                     </div>
                 </div>
             </div>
@@ -367,6 +367,10 @@
                                 <span class="chip bg-color">js</span>
                             </a>
                         
+                            <a href="/tags/es6/" target="_blank">
+                                <span class="chip bg-color">es6</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -387,21 +391,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-01-14
+                    2018-02-01
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        248
+                        789
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </div>
                     
                 
@@ -417,21 +421,100 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="事件轮询"><a href="#事件轮询" class="headerlink" title="事件轮询"></a><center>事件轮询</center></h1><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>　　主线程从<code>任务队列</code>中读取事件，这个过程是循环不断的。</p>
-<p>　　所有任务都可以分为:<code>同步任务(都在主线程)</code>与<code>异步任务(任务队列中)</code>。</p>
-<h2 id="运行的机制"><a href="#运行的机制" class="headerlink" title="运行的机制"></a>运行的机制</h2><ol>
-<li><p><code>所有同步任务都在主线程上执行</code>，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。</p>
+                <h1 id="Class"><a href="#Class" class="headerlink" title="Class"></a><center>Class</center></h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>　　ES6的class是一种语法糖</p>
+<h2 id="定义类"><a href="#定义类" class="headerlink" title="定义类"></a>定义类</h2><ol>
+<li><code>class类中方法以及构造器中没有逗号分隔</code></li>
+<li><code>typeof Point  =&gt; function 是函数</code></li>
+<li><code>Point =&gt; Point.prototype.constructor</code></li>
+<li>类必须使用关键字<code>new</code><ol>
+<li><code>自动调用constructor的构造方法</code></li>
+<li><code>constructor这个方法必须有的</code></li>
+<li><code>如果没有显式的定义,js引擎会默认添加一个空的</code></li>
+</ol>
 </li>
-<li><p><code>主线程之外，还存在一个&quot;任务队列&quot;。存放异步执行的代码，如定时器、事件监听回调函数等，进入等待状态</code>。</p>
+<li>类的所有方法都定义在类的<code>prototype</code>属性上面,包括构造方法(与ES5一致,构造器指向类的本身)<ul>
+<li>instanceObj.constructor === Point.prototype.constructor</li>
+<li>Point.prototype.constructor === Point</li>
+</ul>
 </li>
-<li><p>一旦主线程中的所有同步任务执行完毕，就会读取”任务队列”，看看里面有哪些任务。那些对应的异步任务，于是结束等待状态，进入执行栈，开始执行。</p>
+<li>类的内部所有定义的方法，<code>都是不可枚举的</code><ul>
+<li><code>ES5可以获取到prototype里面的所有方法</code></li>
+<li><code>ES5除了constructor这个属性是唯一不可枚举的</code></li>
+</ul>
 </li>
-<li><p><code>主线程不断重复上面的第三步（轮询）</code>。</p>
+<li><code>类的属性名</code>可以采用<code>表达式</code></li>
+<li>类的内部以及模块的内部已经采用了严格模式</li>
+<li>constructor默认<code>return this</code>;</li>
+<li><code>不存在变量提升</code></li>
+</ol>
+<h3 id="example-class"><a href="#example-class" class="headerlink" title="example(class)"></a>example(class)</h3><pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> bar <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">"bar"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Point</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 构造器(构造方法)</span>
+    <span class="token comment" spellcheck="true">// this指代实例对象</span>
+    <span class="token comment" spellcheck="true">// 这些属性都属于实例对象自身的属性</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">=</span> x<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> y<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 默认是返回的是Point</span>
+    <span class="token comment" spellcheck="true">// return { // 这样的话就返回的是新的对象</span>
+    <span class="token comment" spellcheck="true">//   a:1,</span>
+    <span class="token comment" spellcheck="true">//   b:1</span>
+    <span class="token comment" spellcheck="true">// };</span>
+    <span class="token comment" spellcheck="true">// return '我是字符串'; // 这样还是返回的是this</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment" spellcheck="true">// class有存值函数(setter),以及取值函数(getter)设置在属性的Descriptor对象上</span>
+  <span class="token keyword">get</span> <span class="token function">prop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">"getter"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">set</span> <span class="token function">prop</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"setter: "</span> <span class="token operator">+</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment" spellcheck="true">/**
+   *  私有方法
+   *  1:通过命名方法加以区别(前面加_play()一般这种就是私有方法)
+   *  2:将私有方法移出class模块function bar(baz) {return this.snaf = baz;}
+   *  3:利用Symbol值的唯一性将私有方法命名为一个Symbol值
+   **/</span>
+  <span class="token comment" spellcheck="true">// 方法定义 => 原型上的方法</span>
+  <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">"("</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">+</span> <span class="token string">", "</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">+</span> <span class="token string">")"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token punctuation">[</span>bar<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>
+      <span class="token string">"利用Symbol来创建私有方法,当你导出的时候是获取不到这个值的因为导出的时候只是导出class并没有把命名的变量Symbol进行导出"</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment" spellcheck="true">// 该static 证明是类的静态方法,只能通过类来调用,实例不能继承下来</span>
+  <span class="token comment" spellcheck="true">// 如果静态方法中有this,那么这个this指的是类本身,并不是实例</span>
+  <span class="token comment" spellcheck="true">// 静态方法可以与非静态方法重名</span>
+  <span class="token comment" spellcheck="true">// 静态方法可以被继承</span>
+  <span class="token keyword">static</span> <span class="token function">setPoint</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> instanceObj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Point</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Point<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// class有个name属性</span>
+</code></pre>
+<h2 id="类的继承"><a href="#类的继承" class="headerlink" title="类的继承"></a>类的继承</h2><ol>
+<li>继承的机制<ul>
+<li>es6:先将父类实例对象的属性和方法加到<code>this</code>上面（所以必须先调用super方法),然后再用子类的构造函数<code>修改this</code></li>
+<li>es5:先创建子类实例,利用Father.apply(this)来继承父类的构造器  </li>
+</ul>
+</li>
+<li>子类会<code>继承</code>父类的<code>静态方法</code><ul>
+<li>可以是采用<code>extends</code>来实现继承</li>
+</ul>
 </li>
 </ol>
-<h2 id="主线程与任务列表的示意图"><a href="#主线程与任务列表的示意图" class="headerlink" title="主线程与任务列表的示意图"></a>主线程与任务列表的示意图</h2><p><img src="/imgs/task-queue.png" alt="主线程与任务列表"></p>
-<p><code>任务队列:执行的是先进先出</code>。</p>
-<h2 id="Event-Loop-事件轮询"><a href="#Event-Loop-事件轮询" class="headerlink" title="Event Loop(事件轮询)"></a>Event Loop(事件轮询)</h2><p><img src="/imgs/event-loop.png" alt="事件轮询示意图"></p>
+<h3 id="example-extends"><a href="#example-extends" class="headerlink" title="example(extends)"></a>example(extends)</h3><pre class=" language-js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">ColorPoint</span> <span class="token keyword">extends</span> <span class="token class-name">Point</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> color<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 调用父类的构造器,用来新建父类的this,这里的super必须</span>
+    <span class="token comment" spellcheck="true">// 子类只有调用super之后才能使用this(子类实例的构建,基于父类的实例)</span>
+    <span class="token comment" spellcheck="true">// super作为函数 => super()只能用于子类的构造函数中,别的地方会报错</span>
+    <span class="token comment" spellcheck="true">// super作为对象 => 指向父类的原型对象；在静态方法中，指向父类</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>color <span class="token operator">=</span> color<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
 
             </div>
             <hr>
@@ -579,7 +662,7 @@
                     </span>
                     <a href="https://shenah.coding.me/sah.coding.me" class="b-link-green">沈安恒</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/01/14/web/js/shi-jian-lun-xun/" class="b-link-green">事件轮询</a>
+                    <a href="/2018/02/01/web/es/class/" class="b-link-green">class</a>
                 </p>
             </div>
         </div>
@@ -601,7 +684,7 @@
         repo: 'shenanheng.github.io',
         owner: 'shenah',
         admin: ["shenah"],
-        id: '2018-01-14T15-48-32',
+        id: '2018-02-01T10-20-25',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -626,22 +709,22 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2018/01/20/web/js/fang-dou-yu-jie-liu/">
+                <a href="/2018/02/01/web/js/typeof-instanceof/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="防抖与节流">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="typeof 与instanceof的区别">
                         
-                        <span class="card-title">防抖与节流</span>
+                        <span class="card-title">typeof 与instanceof的区别</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">防抖与节流函数防抖(debounce)　　当持续触发事件时,一定事件段内没有再触发事件,事件处理函数才会执行一次,如果设定的时间到来之前,又一次触发事件,就重新开始延时
-function debounce(fn, wait) {
-  let</div>
+                    <div class="summary">typeof、instanceof的区别typeof　　number,boolean,string,function,object,undefined
+instanceof　　一般判断a变量是否是b变量的实例或者子类
+examplevar </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-20
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-02-01
                         </span>
                         <span class="publish-author">
                             
@@ -673,23 +756,22 @@ function debounce(fn, wait) {
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/01/06/web/js/shi-jian/">
+                <a href="/2018/01/26/web/js/apply-call-bind/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="事件">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="apply、call、bind">
                         
-                        <span class="card-title">事件</span>
+                        <span class="card-title">apply、call、bind</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">事件事件中的名词
-事件目标(event target)：发生的事件或与之相关的对象(常见window,document,element)  
-事件类型(event type)：什么类型事件的字符串(click,blur)
-事件处理程序或事件</div>
+                    <div class="summary">apply、call、bind的用法apply
+参数一:　改变this的指向(不传参,默认指代当前环境的this)
+参数二:　数组,但是实际的话他会以...arguments呈现(也就是说会把数组转化为参数列表)[&#39;a&#39;,&</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-06
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-26
                             </span>
                         <span class="publish-author">
                             

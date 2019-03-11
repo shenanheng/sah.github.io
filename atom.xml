@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shenah.coding.me/sah.coding.me/"/>
-  <updated>2019-03-11T01:24:04.232Z</updated>
+  <updated>2019-03-11T09:34:47.540Z</updated>
   <id>https://shenah.coding.me/sah.coding.me/</id>
   
   <author>
@@ -17,11 +17,169 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>object</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/03/05/web/js/object/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/03/05/web/js/object/</id>
+    <published>2018-03-05T05:50:02.000Z</published>
+    <updated>2019-03-11T09:34:47.540Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;object&quot;&gt;&lt;a href=&quot;#object&quot; class=&quot;headerlink&quot; title=&quot;object&quot;&gt;&lt;/a&gt;&lt;center&gt;object&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;属性特性&quot;&gt;&lt;a href=&quot;#属性特性&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>this</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/02/11/web/js/this/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/02/11/web/js/this/</id>
+    <published>2018-02-11T03:40:40.000Z</published>
+    <updated>2019-03-11T07:59:11.123Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;this的理解&quot;&gt;&lt;a href=&quot;#this的理解&quot; class=&quot;headerlink&quot; title=&quot;this的理解&quot;&gt;&lt;/a&gt;&lt;center&gt;this的理解&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>typeof 与instanceof的区别</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/02/01/web/js/typeof-instanceof/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/02/01/web/js/typeof-instanceof/</id>
+    <published>2018-02-01T06:26:40.000Z</published>
+    <updated>2019-03-11T07:41:42.627Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;typeof、instanceof的区别&quot;&gt;&lt;a href=&quot;#typeof、instanceof的区别&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>class</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/02/01/web/es/class/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/02/01/web/es/class/</id>
+    <published>2018-02-01T02:20:25.000Z</published>
+    <updated>2019-03-11T07:32:08.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Class&quot;&gt;&lt;a href=&quot;#Class&quot; class=&quot;headerlink&quot; title=&quot;Class&quot;&gt;&lt;/a&gt;&lt;center&gt;Class&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+    
+      <category term="es6" scheme="https://shenah.coding.me/sah.coding.me/tags/es6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>apply、call、bind</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/01/26/web/js/apply-call-bind/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/01/26/web/js/apply-call-bind/</id>
+    <published>2018-01-26T03:35:40.000Z</published>
+    <updated>2019-03-11T06:12:32.632Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;apply、call、bind的用法&quot;&gt;&lt;a href=&quot;#apply、call、bind的用法&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>防抖与节流</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/01/20/web/js/fang-dou-yu-jie-liu/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/01/20/web/js/fang-dou-yu-jie-liu/</id>
+    <published>2018-01-20T01:22:35.000Z</published>
+    <updated>2019-03-11T06:12:14.421Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;防抖与节流&quot;&gt;&lt;a href=&quot;#防抖与节流&quot; class=&quot;headerlink&quot; title=&quot;防抖与节流&quot;&gt;&lt;/a&gt;&lt;center&gt;防抖与节流&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;函数防抖-debounce&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>事件轮询</title>
     <link href="https://shenah.coding.me/sah.coding.me/2018/01/14/web/js/shi-jian-lun-xun/"/>
     <id>https://shenah.coding.me/sah.coding.me/2018/01/14/web/js/shi-jian-lun-xun/</id>
     <published>2018-01-14T07:48:32.000Z</published>
-    <updated>2019-03-11T01:24:04.232Z</updated>
+    <updated>2019-03-11T01:34:47.676Z</updated>
     
     <summary type="html">
     
@@ -47,7 +205,7 @@
     <link href="https://shenah.coding.me/sah.coding.me/2018/01/06/web/js/shi-jian/"/>
     <id>https://shenah.coding.me/sah.coding.me/2018/01/06/web/js/shi-jian/</id>
     <published>2018-01-06T05:00:00.000Z</published>
-    <updated>2019-03-11T01:11:52.501Z</updated>
+    <updated>2019-03-11T06:04:22.094Z</updated>
     
     <summary type="html">
     

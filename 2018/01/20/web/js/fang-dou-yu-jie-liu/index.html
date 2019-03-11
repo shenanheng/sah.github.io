@@ -4,12 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="事件轮询, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
-    <meta name="description" content="事件轮询解释　　主线程从任务队列中读取事件，这个过程是循环不断的。
-　　所有任务都可以分为:同步任务(都在主线程)与异步任务(任务队列中)。
-运行的机制
-所有同步任务都在主线程上执行，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。
-">
+    <meta name="keywords" content="防抖与节流, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
+    <meta name="description" content="防抖与节流函数防抖(debounce)　　当持续触发事件时,一定事件段内没有再触发事件,事件处理函数才会执行一次,如果设定的时间到来之前,又一次触发事件,就重新开始延时
+function debounce(fn, wait) {
+  let">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>事件轮询 | 沈安恒</title>
+    <title>防抖与节流 | 沈安恒</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -265,13 +263,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        事件轮询
+                        防抖与节流
                     </div>
                 </div>
             </div>
@@ -387,14 +385,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-01-14
+                    2018-01-20
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        248
+                        319
                     </div>
                     
 
@@ -417,21 +415,32 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="事件轮询"><a href="#事件轮询" class="headerlink" title="事件轮询"></a><center>事件轮询</center></h1><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>　　主线程从<code>任务队列</code>中读取事件，这个过程是循环不断的。</p>
-<p>　　所有任务都可以分为:<code>同步任务(都在主线程)</code>与<code>异步任务(任务队列中)</code>。</p>
-<h2 id="运行的机制"><a href="#运行的机制" class="headerlink" title="运行的机制"></a>运行的机制</h2><ol>
-<li><p><code>所有同步任务都在主线程上执行</code>，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。</p>
-</li>
-<li><p><code>主线程之外，还存在一个&quot;任务队列&quot;。存放异步执行的代码，如定时器、事件监听回调函数等，进入等待状态</code>。</p>
-</li>
-<li><p>一旦主线程中的所有同步任务执行完毕，就会读取”任务队列”，看看里面有哪些任务。那些对应的异步任务，于是结束等待状态，进入执行栈，开始执行。</p>
-</li>
-<li><p><code>主线程不断重复上面的第三步（轮询）</code>。</p>
-</li>
-</ol>
-<h2 id="主线程与任务列表的示意图"><a href="#主线程与任务列表的示意图" class="headerlink" title="主线程与任务列表的示意图"></a>主线程与任务列表的示意图</h2><p><img src="/imgs/task-queue.png" alt="主线程与任务列表"></p>
-<p><code>任务队列:执行的是先进先出</code>。</p>
-<h2 id="Event-Loop-事件轮询"><a href="#Event-Loop-事件轮询" class="headerlink" title="Event Loop(事件轮询)"></a>Event Loop(事件轮询)</h2><p><img src="/imgs/event-loop.png" alt="事件轮询示意图"></p>
+                <h1 id="防抖与节流"><a href="#防抖与节流" class="headerlink" title="防抖与节流"></a><center>防抖与节流</center></h1><h2 id="函数防抖-debounce"><a href="#函数防抖-debounce" class="headerlink" title="函数防抖(debounce)"></a>函数防抖(debounce)</h2><p>　　<code>当持续触发事件时,一定事件段内没有再触发事件,事件处理函数才会执行一次,如果设定的时间到来之前,又一次触发事件,就重新开始延时</code></p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">debounce</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> wait<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> timeout <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>timeout <span class="token operator">!==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timeout<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    timeout <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> wait<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="函数节流-throttle"><a href="#函数节流-throttle" class="headerlink" title="函数节流(throttle)"></a>函数节流(throttle)</h2><p>　　<code>函数的节流(throttle):当持续触发事件时,保证在一定时间段内只调用一次事件处理函数</code></p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> throttle <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>func<span class="token punctuation">,</span> delay<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> prev <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> now <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>now <span class="token operator">-</span> prev <span class="token operator">>=</span> delay<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      func<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> arguments<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      prev <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h2><p>　　函数节流<code>不管事件触发有多频繁，都会保证在规定时间内一定会执行一次真正的事件处理函数</code>，而函数防抖<code>只是在最后一次事件后才触发一次函数</code>。比如在页面的无限加载场景下，我们需要用户在滚动页面时，每隔一段时间发一次 Ajax 请求，而不是在用户停下滚动页面操作时才去请求数据。这样的场景，就适合用节流技术来实现</p>
+<h2 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h2><ul>
+<li>函数防抖:表单多次提交、表单组件内容验证</li>
+<li>函数节流:滚动加载</li>
+</ul>
 
             </div>
             <hr>
@@ -579,7 +588,7 @@
                     </span>
                     <a href="https://shenah.coding.me/sah.coding.me" class="b-link-green">沈安恒</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/01/14/web/js/shi-jian-lun-xun/" class="b-link-green">事件轮询</a>
+                    <a href="/2018/01/20/web/js/fang-dou-yu-jie-liu/" class="b-link-green">防抖与节流</a>
                 </p>
             </div>
         </div>
@@ -601,7 +610,7 @@
         repo: 'shenanheng.github.io',
         owner: 'shenah',
         admin: ["shenah"],
-        id: '2018-01-14T15-48-32',
+        id: '2018-01-20T09-22-35',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -626,22 +635,22 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2018/01/20/web/js/fang-dou-yu-jie-liu/">
+                <a href="/2018/01/26/web/js/apply-call-bind/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="防抖与节流">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="apply、call、bind">
                         
-                        <span class="card-title">防抖与节流</span>
+                        <span class="card-title">apply、call、bind</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">防抖与节流函数防抖(debounce)　　当持续触发事件时,一定事件段内没有再触发事件,事件处理函数才会执行一次,如果设定的时间到来之前,又一次触发事件,就重新开始延时
-function debounce(fn, wait) {
-  let</div>
+                    <div class="summary">apply、call、bind的用法apply
+参数一:　改变this的指向(不传参,默认指代当前环境的this)
+参数二:　数组,但是实际的话他会以...arguments呈现(也就是说会把数组转化为参数列表)[&#39;a&#39;,&</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-20
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-26
                         </span>
                         <span class="publish-author">
                             
@@ -673,23 +682,24 @@ function debounce(fn, wait) {
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/01/06/web/js/shi-jian/">
+                <a href="/2018/01/14/web/js/shi-jian-lun-xun/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="事件">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="事件轮询">
                         
-                        <span class="card-title">事件</span>
+                        <span class="card-title">事件轮询</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">事件事件中的名词
-事件目标(event target)：发生的事件或与之相关的对象(常见window,document,element)  
-事件类型(event type)：什么类型事件的字符串(click,blur)
-事件处理程序或事件</div>
+                    <div class="summary">事件轮询解释　　主线程从任务队列中读取事件，这个过程是循环不断的。
+　　所有任务都可以分为:同步任务(都在主线程)与异步任务(任务队列中)。
+运行的机制
+所有同步任务都在主线程上执行，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。
+</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-06
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-14
                             </span>
                         <span class="publish-author">
                             

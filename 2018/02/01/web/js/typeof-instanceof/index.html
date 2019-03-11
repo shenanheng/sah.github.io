@@ -4,12 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="事件轮询, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
-    <meta name="description" content="事件轮询解释　　主线程从任务队列中读取事件，这个过程是循环不断的。
-　　所有任务都可以分为:同步任务(都在主线程)与异步任务(任务队列中)。
-运行的机制
-所有同步任务都在主线程上执行，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。
-">
+    <meta name="keywords" content="typeof 与instanceof的区别, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
+    <meta name="description" content="typeof、instanceof的区别typeof　　number,boolean,string,function,object,undefined
+instanceof　　一般判断a变量是否是b变量的实例或者子类
+examplevar ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>事件轮询 | 沈安恒</title>
+    <title>typeof 与instanceof的区别 | 沈安恒</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -265,13 +263,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        事件轮询
+                        typeof 与instanceof的区别
                     </div>
                 </div>
             </div>
@@ -387,14 +385,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-01-14
+                    2018-02-01
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        248
+                        59
                     </div>
                     
 
@@ -417,21 +415,14 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="事件轮询"><a href="#事件轮询" class="headerlink" title="事件轮询"></a><center>事件轮询</center></h1><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>　　主线程从<code>任务队列</code>中读取事件，这个过程是循环不断的。</p>
-<p>　　所有任务都可以分为:<code>同步任务(都在主线程)</code>与<code>异步任务(任务队列中)</code>。</p>
-<h2 id="运行的机制"><a href="#运行的机制" class="headerlink" title="运行的机制"></a>运行的机制</h2><ol>
-<li><p><code>所有同步任务都在主线程上执行</code>，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。</p>
-</li>
-<li><p><code>主线程之外，还存在一个&quot;任务队列&quot;。存放异步执行的代码，如定时器、事件监听回调函数等，进入等待状态</code>。</p>
-</li>
-<li><p>一旦主线程中的所有同步任务执行完毕，就会读取”任务队列”，看看里面有哪些任务。那些对应的异步任务，于是结束等待状态，进入执行栈，开始执行。</p>
-</li>
-<li><p><code>主线程不断重复上面的第三步（轮询）</code>。</p>
-</li>
-</ol>
-<h2 id="主线程与任务列表的示意图"><a href="#主线程与任务列表的示意图" class="headerlink" title="主线程与任务列表的示意图"></a>主线程与任务列表的示意图</h2><p><img src="/imgs/task-queue.png" alt="主线程与任务列表"></p>
-<p><code>任务队列:执行的是先进先出</code>。</p>
-<h2 id="Event-Loop-事件轮询"><a href="#Event-Loop-事件轮询" class="headerlink" title="Event Loop(事件轮询)"></a>Event Loop(事件轮询)</h2><p><img src="/imgs/event-loop.png" alt="事件轮询示意图"></p>
+                <h1 id="typeof、instanceof的区别"><a href="#typeof、instanceof的区别" class="headerlink" title="typeof、instanceof的区别"></a><center>typeof、instanceof的区别</center></h1><h2 id="typeof"><a href="#typeof" class="headerlink" title="typeof"></a>typeof</h2><p>　　number,boolean,string,function,object,undefined</p>
+<h2 id="instanceof"><a href="#instanceof" class="headerlink" title="instanceof"></a>instanceof</h2><p>　　<code>一般判断a变量是否是b变量的实例或者子类</code></p>
+<h2 id="example"><a href="#example" class="headerlink" title="example"></a>example</h2><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> type <span class="token operator">=</span> <span class="token string">"type"</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> type<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// String</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>type <span class="token keyword">instanceof</span> <span class="token class-name">String</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>type<span class="token punctuation">.</span>constructor <span class="token operator">===</span> <span class="token string">"String"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// [object String]</span>
+</code></pre>
 
             </div>
             <hr>
@@ -579,7 +570,7 @@
                     </span>
                     <a href="https://shenah.coding.me/sah.coding.me" class="b-link-green">沈安恒</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/01/14/web/js/shi-jian-lun-xun/" class="b-link-green">事件轮询</a>
+                    <a href="/2018/02/01/web/js/typeof-instanceof/" class="b-link-green">typeof 与instanceof的区别</a>
                 </p>
             </div>
         </div>
@@ -601,7 +592,7 @@
         repo: 'shenanheng.github.io',
         owner: 'shenah',
         admin: ["shenah"],
-        id: '2018-01-14T15-48-32',
+        id: '2018-02-01T14-26-40',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -626,22 +617,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2018/01/20/web/js/fang-dou-yu-jie-liu/">
+                <a href="/2018/02/11/web/js/this/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="防抖与节流">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="this">
                         
-                        <span class="card-title">防抖与节流</span>
+                        <span class="card-title">this</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">防抖与节流函数防抖(debounce)　　当持续触发事件时,一定事件段内没有再触发事件,事件处理函数才会执行一次,如果设定的时间到来之前,又一次触发事件,就重新开始延时
-function debounce(fn, wait) {
-  let</div>
+                    <div class="summary">this的理解定义　　this的指向是再执行时才确定(最后谁调用this就指向谁),并不是创建时就确定的.
+example// 在非严格模式下并且在浏览器中
+/**
+ *1:在全局变量中this指代的是window对象
+  a:var =></div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-20
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-02-11
                         </span>
                         <span class="publish-author">
                             
@@ -673,23 +666,24 @@ function debounce(fn, wait) {
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/01/06/web/js/shi-jian/">
+                <a href="/2018/02/01/web/es/class/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="事件">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="class">
                         
-                        <span class="card-title">事件</span>
+                        <span class="card-title">class</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">事件事件中的名词
-事件目标(event target)：发生的事件或与之相关的对象(常见window,document,element)  
-事件类型(event type)：什么类型事件的字符串(click,blur)
-事件处理程序或事件</div>
+                    <div class="summary">Class定义　　ES6的class是一种语法糖
+定义类
+class类中方法以及构造器中没有逗号分隔
+typeof Point  =&gt; function 是函数
+Point =&gt; Point.prototype.construc</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-06
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-02-01
                             </span>
                         <span class="publish-author">
                             
@@ -708,6 +702,10 @@ function debounce(fn, wait) {
                     
                     <a href="/tags/js/" target="_blank">
                         <span class="chip bg-color">js</span>
+                    </a>
+                    
+                    <a href="/tags/es6/" target="_blank">
+                        <span class="chip bg-color">es6</span>
                     </a>
                     
                 </div>

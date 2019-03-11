@@ -4,12 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="事件轮询, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
-    <meta name="description" content="事件轮询解释　　主线程从任务队列中读取事件，这个过程是循环不断的。
-　　所有任务都可以分为:同步任务(都在主线程)与异步任务(任务队列中)。
-运行的机制
-所有同步任务都在主线程上执行，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。
-">
+    <meta name="keywords" content="object, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
+    <meta name="description" content="object属性特性
+可写(writable attribute):是否可以设置该属性的值
+可枚举(enumerable attribute):是否可以通过for/in循环返回该属性
+可配置(configurable attribute):">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>事件轮询 | 沈安恒</title>
+    <title>object | 沈安恒</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -265,13 +264,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        事件轮询
+                        object
                     </div>
                 </div>
             </div>
@@ -387,14 +386,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-01-14
+                    2018-03-05
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        248
+                        383
                     </div>
                     
 
@@ -417,21 +416,46 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="事件轮询"><a href="#事件轮询" class="headerlink" title="事件轮询"></a><center>事件轮询</center></h1><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>　　主线程从<code>任务队列</code>中读取事件，这个过程是循环不断的。</p>
-<p>　　所有任务都可以分为:<code>同步任务(都在主线程)</code>与<code>异步任务(任务队列中)</code>。</p>
-<h2 id="运行的机制"><a href="#运行的机制" class="headerlink" title="运行的机制"></a>运行的机制</h2><ol>
-<li><p><code>所有同步任务都在主线程上执行</code>，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。</p>
+                <h1 id="object"><a href="#object" class="headerlink" title="object"></a><center>object</center></h1><h2 id="属性特性"><a href="#属性特性" class="headerlink" title="属性特性"></a>属性特性</h2><ul>
+<li>可写(writable attribute):是否可以设置该属性的值</li>
+<li>可枚举(enumerable attribute):是否可以通过for/in循环返回该属性</li>
+<li>可配置(configurable attribute):是否可以删除或修改该属性</li>
+</ul>
+<h2 id="对象特性"><a href="#对象特性" class="headerlink" title="对象特性"></a>对象特性</h2><ul>
+<li>对象的原型(prototype)指向另外一个对象,本对象的属性继承来自它的原型对象</li>
+<li>对象的类(class)是一个标识对象类型的字符串</li>
+<li>对象的扩展标记(extensible flag)指明了在(es5中)是否可以向该对象添加新属性</li>
+</ul>
+<h2 id="三类js对象"><a href="#三类js对象" class="headerlink" title="三类js对象"></a>三类js对象</h2><ul>
+<li>内置对象(native object)是由es规范定义的对象或类。例如:数组、函数、日期、和正则表达式</li>
+<li>宿主对象(host object)是由js解释器所嵌入的宿主环境(也可以当成内置对象)<ul>
+<li>HTMLElement对象</li>
+</ul>
 </li>
-<li><p><code>主线程之外，还存在一个&quot;任务队列&quot;。存放异步执行的代码，如定时器、事件监听回调函数等，进入等待状态</code>。</p>
-</li>
-<li><p>一旦主线程中的所有同步任务执行完毕，就会读取”任务队列”，看看里面有哪些任务。那些对应的异步任务，于是结束等待状态，进入执行栈，开始执行。</p>
-</li>
-<li><p><code>主线程不断重复上面的第三步（轮询）</code>。</p>
-</li>
-</ol>
-<h2 id="主线程与任务列表的示意图"><a href="#主线程与任务列表的示意图" class="headerlink" title="主线程与任务列表的示意图"></a>主线程与任务列表的示意图</h2><p><img src="/imgs/task-queue.png" alt="主线程与任务列表"></p>
-<p><code>任务队列:执行的是先进先出</code>。</p>
-<h2 id="Event-Loop-事件轮询"><a href="#Event-Loop-事件轮询" class="headerlink" title="Event Loop(事件轮询)"></a>Event Loop(事件轮询)</h2><p><img src="/imgs/event-loop.png" alt="事件轮询示意图"></p>
+<li>自定义对象(user-defined object)是由运行中的js代码创建的对象</li>
+</ul>
+<h2 id="两类属性"><a href="#两类属性" class="headerlink" title="两类属性"></a>两类属性</h2><ul>
+<li>自由属性(own property)是直接在对象中定义的属性</li>
+<li>继承属性(inherited property)是在对象的原型对象中定义的属性</li>
+</ul>
+<h2 id="创建方式"><a href="#创建方式" class="headerlink" title="创建方式"></a>创建方式</h2><ul>
+<li>使用对象的直接量创建</li>
+</ul>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 用直接量创建的对象并没有prototype属性</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>通过new的方式</li>
+</ul>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 创建一个空对象和使用对象直接量一样的</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 创建一个空数组,和[]一样</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 创建一个表示当前时间的Date对象</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 创建一个可以进行模式匹配的EegExp对象</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RegExp</span><span class="token punctuation">(</span><span class="token string">'js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 
             </div>
             <hr>
@@ -579,7 +603,7 @@
                     </span>
                     <a href="https://shenah.coding.me/sah.coding.me" class="b-link-green">沈安恒</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/01/14/web/js/shi-jian-lun-xun/" class="b-link-green">事件轮询</a>
+                    <a href="/2018/03/05/web/js/object/" class="b-link-green">object</a>
                 </p>
             </div>
         </div>
@@ -601,7 +625,7 @@
         repo: 'shenanheng.github.io',
         owner: 'shenah',
         admin: ["shenah"],
-        id: '2018-01-14T15-48-32',
+        id: '2018-03-05T13-50-02',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -624,25 +648,27 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2018/01/20/web/js/fang-dou-yu-jie-liu/">
+                <a href="/2018/03/05/web/js/object/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="防抖与节流">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="object">
                         
-                        <span class="card-title">防抖与节流</span>
+                        <span class="card-title">object</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">防抖与节流函数防抖(debounce)　　当持续触发事件时,一定事件段内没有再触发事件,事件处理函数才会执行一次,如果设定的时间到来之前,又一次触发事件,就重新开始延时
-function debounce(fn, wait) {
-  let</div>
+                    <div class="summary">object属性特性
+可写(writable attribute):是否可以设置该属性的值
+可枚举(enumerable attribute):是否可以通过for/in循环返回该属性
+可配置(configurable attribute):</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -655,6 +681,7 @@ function debounce(fn, wait) {
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -673,23 +700,24 @@ function debounce(fn, wait) {
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/01/06/web/js/shi-jian/">
+                <a href="/2018/02/11/web/js/this/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="事件">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="this">
                         
-                        <span class="card-title">事件</span>
+                        <span class="card-title">this</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">事件事件中的名词
-事件目标(event target)：发生的事件或与之相关的对象(常见window,document,element)  
-事件类型(event type)：什么类型事件的字符串(click,blur)
-事件处理程序或事件</div>
+                    <div class="summary">this的理解定义　　this的指向是再执行时才确定(最后谁调用this就指向谁),并不是创建时就确定的.
+example// 在非严格模式下并且在浏览器中
+/**
+ *1:在全局变量中this指代的是window对象
+  a:var =></div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-06
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-02-11
                             </span>
                         <span class="publish-author">
                             

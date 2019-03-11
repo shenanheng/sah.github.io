@@ -4,12 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="事件轮询, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
-    <meta name="description" content="事件轮询解释　　主线程从任务队列中读取事件，这个过程是循环不断的。
-　　所有任务都可以分为:同步任务(都在主线程)与异步任务(任务队列中)。
-运行的机制
-所有同步任务都在主线程上执行，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。
-">
+    <meta name="keywords" content="this, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
+    <meta name="description" content="this的理解定义　　this的指向是再执行时才确定(最后谁调用this就指向谁),并不是创建时就确定的.
+example// 在非严格模式下并且在浏览器中
+/**
+ *1:在全局变量中this指代的是window对象
+  a:var =&gt;">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>事件轮询 | 沈安恒</title>
+    <title>this | 沈安恒</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -265,13 +265,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        事件轮询
+                        this
                     </div>
                 </div>
             </div>
@@ -387,14 +387,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-01-14
+                    2018-02-11
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        248
+                        327
                     </div>
                     
 
@@ -417,21 +417,44 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="事件轮询"><a href="#事件轮询" class="headerlink" title="事件轮询"></a><center>事件轮询</center></h1><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>　　主线程从<code>任务队列</code>中读取事件，这个过程是循环不断的。</p>
-<p>　　所有任务都可以分为:<code>同步任务(都在主线程)</code>与<code>异步任务(任务队列中)</code>。</p>
-<h2 id="运行的机制"><a href="#运行的机制" class="headerlink" title="运行的机制"></a>运行的机制</h2><ol>
-<li><p><code>所有同步任务都在主线程上执行</code>，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。</p>
-</li>
-<li><p><code>主线程之外，还存在一个&quot;任务队列&quot;。存放异步执行的代码，如定时器、事件监听回调函数等，进入等待状态</code>。</p>
-</li>
-<li><p>一旦主线程中的所有同步任务执行完毕，就会读取”任务队列”，看看里面有哪些任务。那些对应的异步任务，于是结束等待状态，进入执行栈，开始执行。</p>
-</li>
-<li><p><code>主线程不断重复上面的第三步（轮询）</code>。</p>
-</li>
-</ol>
-<h2 id="主线程与任务列表的示意图"><a href="#主线程与任务列表的示意图" class="headerlink" title="主线程与任务列表的示意图"></a>主线程与任务列表的示意图</h2><p><img src="/imgs/task-queue.png" alt="主线程与任务列表"></p>
-<p><code>任务队列:执行的是先进先出</code>。</p>
-<h2 id="Event-Loop-事件轮询"><a href="#Event-Loop-事件轮询" class="headerlink" title="Event Loop(事件轮询)"></a>Event Loop(事件轮询)</h2><p><img src="/imgs/event-loop.png" alt="事件轮询示意图"></p>
+                <h1 id="this的理解"><a href="#this的理解" class="headerlink" title="this的理解"></a><center>this的理解</center></h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>　　this的指向是<code>再执行时才确定</code>(最后谁调用this就指向谁),并不是<code>创建时就确定的</code>.</p>
+<h2 id="example"><a href="#example" class="headerlink" title="example"></a>example</h2><pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 在非严格模式下并且在浏览器中</span>
+<span class="token comment" spellcheck="true">/**
+ *1:在全局变量中this指代的是window对象
+  a:var => 声明的变量都会被挂载到window中(例如var a = 1 当你使用a的时候实际是window.a)
+ *2:当函数调用的时候this指向的是当前函数调用的最近的对象(如果没有上一级对象则是window对象)
+ */</span>
+<span class="token keyword">var</span> o <span class="token operator">=</span> <span class="token punctuation">{</span>
+  a<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  b<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    a<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+    fn<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> j <span class="token operator">=</span> o<span class="token punctuation">.</span>b<span class="token punctuation">.</span>fn<span class="token punctuation">;</span>
+o<span class="token punctuation">.</span>b<span class="token punctuation">.</span><span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 调用方法里面的this是指代的b对象而不是o对象</span>
+<span class="token function">j</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 这里指代的this是window对象,j() 实际是window.j();是window里面来调用</span>
+
+<span class="token comment" spellcheck="true">/**
+ *    构造函数中
+ *    new可以改变this的指向,当前this就会赋给等号左边的变量,即变量就会拥有这个对象的所有属性
+ */</span>
+<span class="token keyword">function</span> <span class="token function">Fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>user <span class="token operator">=</span> <span class="token string">"a"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">Fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>user <span class="token operator">=</span> <span class="token string">"b"</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// undefined => 因为这个方法返回的是空对象或者是函数(函数里面没有与之对应属性);</span>
+<span class="token comment" spellcheck="true">// 特别注意当return返回的是null(虽然也是空对象) b.user // 为b</span>
+</code></pre>
 
             </div>
             <hr>
@@ -579,7 +602,7 @@
                     </span>
                     <a href="https://shenah.coding.me/sah.coding.me" class="b-link-green">沈安恒</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/01/14/web/js/shi-jian-lun-xun/" class="b-link-green">事件轮询</a>
+                    <a href="/2018/02/11/web/js/this/" class="b-link-green">this</a>
                 </p>
             </div>
         </div>
@@ -601,7 +624,7 @@
         repo: 'shenanheng.github.io',
         owner: 'shenah',
         admin: ["shenah"],
-        id: '2018-01-14T15-48-32',
+        id: '2018-02-11T11-40-40',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -626,22 +649,23 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2018/01/20/web/js/fang-dou-yu-jie-liu/">
+                <a href="/2018/03/05/web/js/object/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="防抖与节流">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="object">
                         
-                        <span class="card-title">防抖与节流</span>
+                        <span class="card-title">object</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">防抖与节流函数防抖(debounce)　　当持续触发事件时,一定事件段内没有再触发事件,事件处理函数才会执行一次,如果设定的时间到来之前,又一次触发事件,就重新开始延时
-function debounce(fn, wait) {
-  let</div>
+                    <div class="summary">object属性特性
+可写(writable attribute):是否可以设置该属性的值
+可枚举(enumerable attribute):是否可以通过for/in循环返回该属性
+可配置(configurable attribute):</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-20
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-05
                         </span>
                         <span class="publish-author">
                             
@@ -673,23 +697,22 @@ function debounce(fn, wait) {
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/01/06/web/js/shi-jian/">
+                <a href="/2018/02/01/web/js/typeof-instanceof/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="事件">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="typeof 与instanceof的区别">
                         
-                        <span class="card-title">事件</span>
+                        <span class="card-title">typeof 与instanceof的区别</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">事件事件中的名词
-事件目标(event target)：发生的事件或与之相关的对象(常见window,document,element)  
-事件类型(event type)：什么类型事件的字符串(click,blur)
-事件处理程序或事件</div>
+                    <div class="summary">typeof、instanceof的区别typeof　　number,boolean,string,function,object,undefined
+instanceof　　一般判断a变量是否是b变量的实例或者子类
+examplevar </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-06
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-02-01
                             </span>
                         <span class="publish-author">
                             

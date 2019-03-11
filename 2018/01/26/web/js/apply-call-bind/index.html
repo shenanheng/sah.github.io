@@ -4,12 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="事件轮询, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
-    <meta name="description" content="事件轮询解释　　主线程从任务队列中读取事件，这个过程是循环不断的。
-　　所有任务都可以分为:同步任务(都在主线程)与异步任务(任务队列中)。
-运行的机制
-所有同步任务都在主线程上执行，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。
-">
+    <meta name="keywords" content="apply、call、bind, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
+    <meta name="description" content="apply、call、bind的用法apply
+参数一:　改变this的指向(不传参,默认指代当前环境的this)
+参数二:　数组,但是实际的话他会以...arguments呈现(也就是说会把数组转化为参数列表)[&amp;#39;a&amp;#39;,&amp;">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>事件轮询 | 沈安恒</title>
+    <title>apply、call、bind | 沈安恒</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -265,13 +263,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        事件轮询
+                        apply、call、bind
                     </div>
                 </div>
             </div>
@@ -387,14 +385,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-01-14
+                    2018-01-26
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        248
+                        362
                     </div>
                     
 
@@ -417,21 +415,45 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="事件轮询"><a href="#事件轮询" class="headerlink" title="事件轮询"></a><center>事件轮询</center></h1><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>　　主线程从<code>任务队列</code>中读取事件，这个过程是循环不断的。</p>
-<p>　　所有任务都可以分为:<code>同步任务(都在主线程)</code>与<code>异步任务(任务队列中)</code>。</p>
-<h2 id="运行的机制"><a href="#运行的机制" class="headerlink" title="运行的机制"></a>运行的机制</h2><ol>
-<li><p><code>所有同步任务都在主线程上执行</code>，形成一个执行栈(每执行一条代码，向栈中压入这条代码)。</p>
-</li>
-<li><p><code>主线程之外，还存在一个&quot;任务队列&quot;。存放异步执行的代码，如定时器、事件监听回调函数等，进入等待状态</code>。</p>
-</li>
-<li><p>一旦主线程中的所有同步任务执行完毕，就会读取”任务队列”，看看里面有哪些任务。那些对应的异步任务，于是结束等待状态，进入执行栈，开始执行。</p>
-</li>
-<li><p><code>主线程不断重复上面的第三步（轮询）</code>。</p>
-</li>
-</ol>
-<h2 id="主线程与任务列表的示意图"><a href="#主线程与任务列表的示意图" class="headerlink" title="主线程与任务列表的示意图"></a>主线程与任务列表的示意图</h2><p><img src="/imgs/task-queue.png" alt="主线程与任务列表"></p>
-<p><code>任务队列:执行的是先进先出</code>。</p>
-<h2 id="Event-Loop-事件轮询"><a href="#Event-Loop-事件轮询" class="headerlink" title="Event Loop(事件轮询)"></a>Event Loop(事件轮询)</h2><p><img src="/imgs/event-loop.png" alt="事件轮询示意图"></p>
+                <h1 id="apply、call、bind的用法"><a href="#apply、call、bind的用法" class="headerlink" title="apply、call、bind的用法"></a><center>apply、call、bind的用法</center></h1><h2 id="apply"><a href="#apply" class="headerlink" title="apply"></a>apply</h2><ul>
+<li>参数一:　改变this的指向(<code>不传参,默认指代当前环境的this</code>)</li>
+<li>参数二:　数组,<code>但是实际的话他会以...arguments呈现(也就是说会把数组转化为参数列表)[&#39;a&#39;,&#39;b&#39;,&#39;c&#39;] =&gt; &#39;a&#39;,&#39;b&#39;,&#39;c&#39;的形式</code></li>
+</ul>
+<h3 id="apply的妙用"><a href="#apply的妙用" class="headerlink" title="apply的妙用"></a>apply的妙用</h3><p>　　这些方法都只是接受param1,param2,param3apply方法可以默认把数组转化为这种形式</p>
+<pre class=" language-js"><code class="language-js">Array<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>push<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span>array<span class="token punctuation">)</span><span class="token punctuation">;</span>
+Math<span class="token punctuation">.</span>max<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span>array<span class="token punctuation">)</span><span class="token punctuation">;</span>
+Math<span class="token punctuation">.</span>max<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span>array<span class="token punctuation">)</span><span class="token punctuation">,</span>
+</code></pre>
+<h2 id="call"><a href="#call" class="headerlink" title="call"></a>call</h2><ul>
+<li>参数一:　改变this的指向(<code>不传参,默认指代当前环境的this</code>)</li>
+<li>参数二:　(a,b,c)</li>
+</ul>
+<h2 id="bing"><a href="#bing" class="headerlink" title="bing"></a>bing</h2><ul>
+<li>bind(this,’1’):　 创建一个新函数，称为<code>绑定函数</code></li>
+<li>参数一:　改变this的指向(<code>不传参,默认指代当前环境的this</code>)</li>
+<li>参数二:　(a,b,c)</li>
+</ul>
+<h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h2><h3 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h3><ul>
+<li>第一个参数都是<code>this要指向的对象</code>，也就是想指定的上下文；</li>
+<li><code>用来改变函数的this对象的指向的</code>；</li>
+<li><code>利用后续参数传参</code>；</li>
+</ul>
+<h3 id="异同点"><a href="#异同点" class="headerlink" title="异同点"></a>异同点</h3><ul>
+<li>bind 是<code>返回对应函数</code>，便于稍后调用；apply 、call 则是<code>立即调用</code> 。</li>
+</ul>
+<h2 id="example"><a href="#example" class="headerlink" title="example"></a>example</h2><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">People</span><span class="token punctuation">(</span>age<span class="token punctuation">,</span> name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">Student</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> grade<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// People.apply(this,arguments);  </span>
+  <span class="token comment" spellcheck="true">// 这里使用apply就会导致赋值错误因为people对应的参数位置与student对应的参数位置不一致就会导致赋值错误</span>
+  <span class="token comment" spellcheck="true">// 这里应该使用call</span>
+  People<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> arguments<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> arguments<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>grade <span class="token operator">=</span> grade<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">new</span> <span class="token class-name">Student</span><span class="token punctuation">(</span><span class="token string">"shenah"</span><span class="token punctuation">,</span> <span class="token string">"18"</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 
             </div>
             <hr>
@@ -579,7 +601,7 @@
                     </span>
                     <a href="https://shenah.coding.me/sah.coding.me" class="b-link-green">沈安恒</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/01/14/web/js/shi-jian-lun-xun/" class="b-link-green">事件轮询</a>
+                    <a href="/2018/01/26/web/js/apply-call-bind/" class="b-link-green">apply、call、bind</a>
                 </p>
             </div>
         </div>
@@ -601,7 +623,7 @@
         repo: 'shenanheng.github.io',
         owner: 'shenah',
         admin: ["shenah"],
-        id: '2018-01-14T15-48-32',
+        id: '2018-01-26T11-35-40',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -626,22 +648,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2018/01/20/web/js/fang-dou-yu-jie-liu/">
+                <a href="/2018/02/01/web/es/class/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="防抖与节流">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="class">
                         
-                        <span class="card-title">防抖与节流</span>
+                        <span class="card-title">class</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">防抖与节流函数防抖(debounce)　　当持续触发事件时,一定事件段内没有再触发事件,事件处理函数才会执行一次,如果设定的时间到来之前,又一次触发事件,就重新开始延时
-function debounce(fn, wait) {
-  let</div>
+                    <div class="summary">Class定义　　ES6的class是一种语法糖
+定义类
+class类中方法以及构造器中没有逗号分隔
+typeof Point  =&gt; function 是函数
+Point =&gt; Point.prototype.construc</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-20
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-02-01
                         </span>
                         <span class="publish-author">
                             
@@ -662,6 +686,10 @@ function debounce(fn, wait) {
                         <span class="chip bg-color">js</span>
                     </a>
                     
+                    <a href="/tags/es6/" target="_blank">
+                        <span class="chip bg-color">es6</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -673,23 +701,22 @@ function debounce(fn, wait) {
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/01/06/web/js/shi-jian/">
+                <a href="/2018/01/20/web/js/fang-dou-yu-jie-liu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="事件">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="防抖与节流">
                         
-                        <span class="card-title">事件</span>
+                        <span class="card-title">防抖与节流</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">事件事件中的名词
-事件目标(event target)：发生的事件或与之相关的对象(常见window,document,element)  
-事件类型(event type)：什么类型事件的字符串(click,blur)
-事件处理程序或事件</div>
+                    <div class="summary">防抖与节流函数防抖(debounce)　　当持续触发事件时,一定事件段内没有再触发事件,事件处理函数才会执行一次,如果设定的时间到来之前,又一次触发事件,就重新开始延时
+function debounce(fn, wait) {
+  let</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-06
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-20
                             </span>
                         <span class="publish-author">
                             
