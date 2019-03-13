@@ -5,7 +5,7 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta name="keywords" content="html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
-    <meta name="description" content="沈安恒">
+    <meta name="description" content="迷一样的自信">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>沈安恒</title>
+    <title>迷一样的自信</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -35,7 +35,7 @@
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
-<body>
+<body oncontextmenu="return false" onselectstart="return false">
 
 <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -45,7 +45,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">沈安恒</span>
+                    <span class="logo-span">迷一样的自信</span>
                 </a>
             </div>
             
@@ -120,7 +120,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">沈安恒</div>
+        <div class="logo-name">迷一样的自信</div>
         <div class="logo-desc">
             
             html,css,js,vue,react,webpack,node,es6
@@ -377,20 +377,18 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
     
     
-    <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('/medias/featureimages/3.jpg');">
+    <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('/medias/featureimages/7.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
-                    <div class="title center-align">apply、call、bind</div>
+                    <div class="title center-align">BFC、IFC、GFC、FFC</div>
                     <div class="description center-align">
                     
-                        apply、call、bind的用法apply
-参数一:　改变this的指向(不传参,默认指代当前环境的this)
-参数二:　数组,但是实际的话他会以...arguments呈现(也就是说会把数组转化为参数列表)[&#39;a&#39;,&
+                        BFC、IFC、GFC、FFCBFC概念(BFC)　　&quot;块级格式化上下文&quot;。它是一个独立的渲染区域，只有Block-level box参与， 它规定了内部的Block-level Box如何布局，并且与这个区域外部毫不相
                     
                     </div>
                     <div class="cover-btns">
-                        <a href="/2018/01/26/web/js/apply-call-bind/" class="waves-effect waves-light btn" target="_blank">
+                        <a href="/2018/04/13/web/css/bfc-ifc-gfc-ffc/" class="waves-effect waves-light btn" target="_blank">
                             <i class="icon fa fa-eye fa-fw"></i>阅读更多
                         </a>
                     </div>
@@ -404,90 +402,17 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
-                    <div class="title center-align">class</div>
+                    <div class="title center-align">ajax</div>
                     <div class="description center-align">
                     
-                        Class定义　　ES6的class是一种语法糖
-定义类
-class类中方法以及构造器中没有逗号分隔
-typeof Point  =&gt; function 是函数
-Point =&gt; Point.prototype.construc
+                        ajaxajax流程第一步 创建XMLHttpRequest对象var request = new XMLHttpRequest();
+
+第二步 监听XMLHttpRequest对象里面的readystatechang// 用的属性监听
+/
                     
                     </div>
                     <div class="cover-btns">
-                        <a href="/2018/02/01/web/es/class/" class="waves-effect waves-light btn" target="_blank">
-                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('/medias/featureimages/9.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col s10 offset-s1">
-                    <div class="title center-align">object</div>
-                    <div class="description center-align">
-                    
-                        object属性特性
-可写(writable attribute):是否可以设置该属性的值
-可枚举(enumerable attribute):是否可以通过for/in循环返回该属性
-可配置(configurable attribute):
-                    
-                    </div>
-                    <div class="cover-btns">
-                        <a href="/2018/03/05/web/js/object/" class="waves-effect waves-light btn" target="_blank">
-                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('/medias/featureimages/14.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col s10 offset-s1">
-                    <div class="title center-align">this</div>
-                    <div class="description center-align">
-                    
-                        this的理解定义　　this的指向是再执行时才确定(最后谁调用this就指向谁),并不是创建时就确定的.
-example// 在非严格模式下并且在浏览器中
-/**
- *1:在全局变量中this指代的是window对象
-  a:var =>
-                    
-                    </div>
-                    <div class="cover-btns">
-                        <a href="/2018/02/11/web/js/this/" class="waves-effect waves-light btn" target="_blank">
-                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('/medias/featureimages/2.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col s10 offset-s1">
-                    <div class="title center-align">typeof 与instanceof的区别</div>
-                    <div class="description center-align">
-                    
-                        typeof、instanceof的区别typeof　　number,boolean,string,function,object,undefined
-instanceof　　一般判断a变量是否是b变量的实例或者子类
-examplevar 
-                    
-                    </div>
-                    <div class="cover-btns">
-                        <a href="/2018/02/01/web/js/typeof-instanceof/" class="waves-effect waves-light btn" target="_blank">
+                        <a href="/2018/04/24/web/httprequest/ajax/" class="waves-effect waves-light btn" target="_blank">
                             <i class="icon fa fa-eye fa-fw"></i>阅读更多
                         </a>
                     </div>
@@ -501,17 +426,54 @@ examplevar
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
-                    <div class="title center-align">事件</div>
+                    <div class="title center-align">css与js的装载与执行</div>
                     <div class="description center-align">
                     
-                        事件事件中的名词
-事件目标(event target)：发生的事件或与之相关的对象(常见window,document,element)  
-事件类型(event type)：什么类型事件的字符串(click,blur)
-事件处理程序或事件
+                        css与js的装载与执行
+
+顺序执行、并发加载
+
+词法分析 =&gt; 从上到下依次解析
+并发加载 =&gt; 并发加载有上限(某个域名下并发数量是有限制的,应该控制每个域名下加载的资源数量)
+
+
+是否阻塞
+
+css阻塞  
+
+css he
                     
                     </div>
                     <div class="cover-btns">
-                        <a href="/2018/01/06/web/js/shi-jian/" class="waves-effect waves-light btn" target="_blank">
+                        <a href="/2018/05/14/web/performance/css-yu-js-de-zhuang-zai-yu-zhi-xing/" class="waves-effect waves-light btn" target="_blank">
+                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('/medias/featureimages/22.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    <div class="title center-align">重绘与回流</div>
+                    <div class="description center-align">
+                    
+                        重绘与回流重绘(redraw)
+元素外观的改变所触发的浏览器行为，例如改变visibility、outline、背景色等属性。
+浏览器会根据元素的新属性重新绘制，使元素呈现新的外观。
+重绘不会带来重新布局，并不一定伴随重排。
+
+
+减少重绘
+
+                    
+                    </div>
+                    <div class="cover-btns">
+                        <a href="/2018/05/13/web/performance/redrawreflow/" class="waves-effect waves-light btn" target="_blank">
                             <i class="icon fa fa-eye fa-fw"></i>阅读更多
                         </a>
                     </div>
@@ -536,7 +498,7 @@ examplevar
                     
                     </div>
                     <div class="cover-btns">
-                        <a href="/2018/01/14/web/js/shi-jian-lun-xun/" class="waves-effect waves-light btn" target="_blank">
+                        <a href="/2018/01/14/web/js/basics/shi-jian-lun-xun/" class="waves-effect waves-light btn" target="_blank">
                             <i class="icon fa fa-eye fa-fw"></i>阅读更多
                         </a>
                     </div>
@@ -550,16 +512,17 @@ examplevar
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
-                    <div class="title center-align">防抖与节流</div>
+                    <div class="title center-align">object</div>
                     <div class="description center-align">
                     
-                        防抖与节流函数防抖(debounce)　　当持续触发事件时,一定事件段内没有再触发事件,事件处理函数才会执行一次,如果设定的时间到来之前,又一次触发事件,就重新开始延时
-function debounce(fn, wait) {
-  let
+                        object对象特性
+对象的原型(prototype)指向另外一个对象,本对象的属性继承来自它的原型对象
+对象的类(class)是一个标识对象类型的字符串
+对象的扩展标记(extensible flag)指明了在(es5中)是否可以向该对象
                     
                     </div>
                     <div class="cover-btns">
-                        <a href="/2018/01/20/web/js/fang-dou-yu-jie-liu/" class="waves-effect waves-light btn" target="_blank">
+                        <a href="/2018/03/05/web/js/obj/object/" class="waves-effect waves-light btn" target="_blank">
                             <i class="icon fa fa-eye fa-fw"></i>阅读更多
                         </a>
                     </div>
@@ -729,34 +692,35 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2018/03/05/web/js/object/">
+                    <a href="/2018/06/08/designpattern/ce-lue-mo-shi/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="object">
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="策略模式">
                             
-                            <span class="card-title">object</span>
+                            <span class="card-title">策略模式</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary">
                             
-                                object属性特性
-可写(writable attribute):是否可以设置该属性的值
-可枚举(enumerable attribute
+                                策略模式原理　　定义一系列的算法，把它们一个个封装起来，并且使它们可以相互替换
+用途　　根据实际的场景,运用对应的策略
+组成
+策略类  =&
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-05
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-06-08
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/前端/" class="post-category" target="_blank">
-                                    前端
+                                <a href="/categories/设计模式/" class="post-category" target="_blank">
+                                    设计模式
                                 </a>
                                 
                                 
@@ -767,8 +731,8 @@ $(function () {
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/js/" target="_blank">
-                            <span class="chip bg-color">js</span>
+                        <a href="/tags/设计模式/" target="_blank">
+                            <span class="chip bg-color">设计模式</span>
                         </a>
                         
                     </div>
@@ -778,33 +742,33 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2018/02/11/web/js/this/">
+                    <a href="/2018/06/07/designpattern/dai-li-mo-shi/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="this">
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="代理模式">
                             
-                            <span class="card-title">this</span>
+                            <span class="card-title">代理模式</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary">
                             
-                                this的理解定义　　this的指向是再执行时才确定(最后谁调用this就指向谁),并不是创建时就确定的.
-example// 在非严格模式
+                                代理模式原理　　为一个对象提供一个代用品或占位符，以便控制对它的访问。(替身对象对用户的请求做出一些处理后再把请求转发给本体对象)
+保护代理
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-02-11
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-06-07
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/前端/" class="post-category" target="_blank">
-                                    前端
+                                <a href="/categories/设计模式/" class="post-category" target="_blank">
+                                    设计模式
                                 </a>
                                 
                                 
@@ -815,8 +779,8 @@ example// 在非严格模式
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/js/" target="_blank">
-                            <span class="chip bg-color">js</span>
+                        <a href="/tags/设计模式/" target="_blank">
+                            <span class="chip bg-color">设计模式</span>
                         </a>
                         
                     </div>
@@ -826,32 +790,35 @@ example// 在非严格模式
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2018/02/01/web/js/typeof-instanceof/">
+                    <a href="/2018/06/06/designpattern/dan-li-mo-shi/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="typeof 与instanceof的区别">
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="单例模式">
                             
-                            <span class="card-title">typeof 与instanceof的区别</span>
+                            <span class="card-title">单例模式</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary">
                             
-                                typeof、instanceof的区别typeof　　number,boolean,string,function,object,unde
+                                单例模式原理　　判断是否有这个实例,没有就创建,有就返回它的实例
+用途　　在整个过程中只需要一个对象,并提供全局的访问
+/**
+ * 非透明
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-02-01
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-06-06
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/前端/" class="post-category" target="_blank">
-                                    前端
+                                <a href="/categories/设计模式/" class="post-category" target="_blank">
+                                    设计模式
                                 </a>
                                 
                                 
@@ -862,8 +829,8 @@ example// 在非严格模式
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/js/" target="_blank">
-                            <span class="chip bg-color">js</span>
+                        <a href="/tags/设计模式/" target="_blank">
+                            <span class="chip bg-color">设计模式</span>
                         </a>
                         
                     </div>
@@ -873,35 +840,33 @@ example// 在非严格模式
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2018/02/01/web/es/class/">
+                    <a href="/2018/06/05/designpattern/die-dai-qi-mo-shi/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="class">
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="迭代器模式">
                             
-                            <span class="card-title">class</span>
+                            <span class="card-title">迭代器模式</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary">
                             
-                                Class定义　　ES6的class是一种语法糖
-定义类
-class类中方法以及构造器中没有逗号分隔
-typeof Point  =&gt;
+                                迭代器模式原理　　指提供一种方法顺序访问一个聚合对象中的各个元素，而又不需要暴露该对象的内部表示
+用途　　可以把迭代的过程从业务逻辑中分离出
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-02-01
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-06-05
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/前端/" class="post-category" target="_blank">
-                                    前端
+                                <a href="/categories/设计模式/" class="post-category" target="_blank">
+                                    设计模式
                                 </a>
                                 
                                 
@@ -912,12 +877,8 @@ typeof Point  =&gt;
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/js/" target="_blank">
-                            <span class="chip bg-color">js</span>
-                        </a>
-                        
-                        <a href="/tags/es6/" target="_blank">
-                            <span class="chip bg-color">es6</span>
+                        <a href="/tags/设计模式/" target="_blank">
+                            <span class="chip bg-color">设计模式</span>
                         </a>
                         
                     </div>
@@ -927,34 +888,34 @@ typeof Point  =&gt;
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2018/01/26/web/js/apply-call-bind/">
+                    <a href="/2018/06/04/designpattern/fa-bu-ding-yue-zhe-mo-shi/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="apply、call、bind">
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="发布-订阅者模式">
                             
-                            <span class="card-title">apply、call、bind</span>
+                            <span class="card-title">发布-订阅者模式</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary">
                             
-                                apply、call、bind的用法apply
-参数一:　改变this的指向(不传参,默认指代当前环境的this)
-参数二:　数组,但是实际
+                                发布-订阅者模式原理　　它定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都将得到通知。
+优点
+时间上的解耦
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-26
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-06-04
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/前端/" class="post-category" target="_blank">
-                                    前端
+                                <a href="/categories/设计模式/" class="post-category" target="_blank">
+                                    设计模式
                                 </a>
                                 
                                 
@@ -965,8 +926,8 @@ typeof Point  =&gt;
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/js/" target="_blank">
-                            <span class="chip bg-color">js</span>
+                        <a href="/tags/设计模式/" target="_blank">
+                            <span class="chip bg-color">设计模式</span>
                         </a>
                         
                     </div>
@@ -976,32 +937,35 @@ typeof Point  =&gt;
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2018/01/20/web/js/fang-dou-yu-jie-liu/">
+                    <a href="/2018/06/04/designpattern/she-ji-mo-shi/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="防抖与节流">
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="设计模式">
                             
-                            <span class="card-title">防抖与节流</span>
+                            <span class="card-title">设计模式</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary">
                             
-                                防抖与节流函数防抖(debounce)　　当持续触发事件时,一定事件段内没有再触发事件,事件处理函数才会执行一次,如果设定的时间到来之前,又
+                                设计模式主题　　将不变的部分和变化的部分隔开
+原则
+单一职责原则(SRP)
+一个对象（方法）只做一件事情  =&gt;  应该只有一个原因而
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-20
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-06-04
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/前端/" class="post-category" target="_blank">
-                                    前端
+                                <a href="/categories/设计模式/" class="post-category" target="_blank">
+                                    设计模式
                                 </a>
                                 
                                 
@@ -1012,8 +976,8 @@ typeof Point  =&gt;
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/js/" target="_blank">
-                            <span class="chip bg-color">js</span>
+                        <a href="/tags/设计模式/" target="_blank">
+                            <span class="chip bg-color">设计模式</span>
                         </a>
                         
                     </div>
@@ -1023,26 +987,30 @@ typeof Point  =&gt;
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2018/01/14/web/js/shi-jian-lun-xun/">
+                    <a href="/2018/05/20/web/performance/improveperformance/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="事件轮询">
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="提高前端性能">
                             
-                            <span class="card-title">事件轮询</span>
+                            <span class="card-title">提高前端性能</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary">
                             
-                                事件轮询解释　　主线程从任务队列中读取事件，这个过程是循环不断的。
-　　所有任务都可以分为:同步任务(都在主线程)与异步任务(任务队列中)。
+                                提高性能网络方面
+减少dns查询时间
+网络请求过程中采用cdn加速
+相同的静态资源缓存
+减少http请求大小
+减少http请求次数(是否可以
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-14
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-05-20
                             </span>
                             <span class="publish-author">
                                 
@@ -1060,8 +1028,8 @@ typeof Point  =&gt;
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/js/" target="_blank">
-                            <span class="chip bg-color">js</span>
+                        <a href="/tags/performance/" target="_blank">
+                            <span class="chip bg-color">performance</span>
                         </a>
                         
                     </div>
@@ -1071,26 +1039,31 @@ typeof Point  =&gt;
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2018/01/06/web/js/shi-jian/">
+                    <a href="/2018/05/14/web/performance/zi-yuan-de-he-bing-yu-ya-suo/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="事件">
+                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="资源的合并与压缩">
                             
-                            <span class="card-title">事件</span>
+                            <span class="card-title">资源的合并与压缩</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary">
                             
-                                事件事件中的名词
-事件目标(event target)：发生的事件或与之相关的对象(常见window,document,element)  
+                                资源的合并与压缩
+减少http请求数量(合并)
+减少请求资源的大小(压缩)
+
+html压缩
+
+nodejs提供html-minifier工具
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-06
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-05-14
                             </span>
                             <span class="publish-author">
                                 
@@ -1108,8 +1081,208 @@ typeof Point  =&gt;
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/js/" target="_blank">
-                            <span class="chip bg-color">js</span>
+                        <a href="/tags/performance/" target="_blank">
+                            <span class="chip bg-color">performance</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2018/05/14/web/performance/css-yu-js-de-zhuang-zai-yu-zhi-xing/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="css与js的装载与执行">
+                            
+                            <span class="card-title">css与js的装载与执行</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary">
+                            
+                                css与js的装载与执行
+
+顺序执行、并发加载
+
+词法分析 =&gt; 从上到下依次解析
+并发加载 =&gt; 并发加载有上限(某个域名下并
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-05-14
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/前端/" class="post-category" target="_blank">
+                                    前端
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/performance/" target="_blank">
+                            <span class="chip bg-color">performance</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2018/05/13/web/performance/lan-jia-zai-yu-yu-jia-zai/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="懒加载与预加载">
+                            
+                            <span class="card-title">懒加载与预加载</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary">
+                            
+                                懒加载与预加载懒加载(基本对于图片)
+减少无效资源的加载
+并发加载的资源过多会阻塞js的加载影响网站的正常使用
+图片进入可是区域之后请求图片
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-05-13
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/前端/" class="post-category" target="_blank">
+                                    前端
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/performance/" target="_blank">
+                            <span class="chip bg-color">performance</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2018/05/13/web/performance/redrawreflow/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="重绘与回流">
+                            
+                            <span class="card-title">重绘与回流</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary">
+                            
+                                重绘与回流重绘(redraw)
+元素外观的改变所触发的浏览器行为，例如改变visibility、outline、背景色等属性。
+浏览器会根据
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-05-13
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/前端/" class="post-category" target="_blank">
+                                    前端
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/performance/" target="_blank">
+                            <span class="chip bg-color">performance</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2018/05/13/web/performance/browserstorage/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="浏览器的存储">
+                            
+                            <span class="card-title">浏览器的存储</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary">
+                            
+                                浏览器的存储cookie生成方式(cookie)
+http response header中的set-cookie
+js中可以通过docum
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-05-13
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/前端/" class="post-category" target="_blank">
+                                    前端
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/performance/" target="_blank">
+                            <span class="chip bg-color">performance</span>
                         </a>
                         
                     </div>
@@ -1123,6 +1296,29 @@ typeof Point  =&gt;
 </main>
 
 
+<div class="container paging">
+    <div class="row">
+        <div class="col s6 m4 l4">
+            
+            <a class="left btn-floating btn-large disabled">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            
+        </div>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">1 / 4</div>
+        </div>
+        <div class="col s6 m4 l4">
+            
+            <a href="/page/2/" class="right btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fa fa-angle-right"></i>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+
 
 <footer class="page-footer bg-color">
     <div class="container row center-align">
@@ -1133,7 +1329,7 @@ typeof Point  =&gt;
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">3.1k</span>
+                <span class="white-color">17.1k</span>
             
 
             

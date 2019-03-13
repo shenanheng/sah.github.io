@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>沈安恒</title>
+  <title>迷一样的自信</title>
   
   <subtitle>前端外卖小哥</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shenah.coding.me/sah.coding.me/"/>
-  <updated>2019-03-11T09:34:47.540Z</updated>
+  <updated>2019-03-13T01:08:40.898Z</updated>
   <id>https://shenah.coding.me/sah.coding.me/</id>
   
   <author>
-    <name>沈安恒</name>
+    <name>迷一样的自信</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>object</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/03/05/web/js/object/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/03/05/web/js/object/</id>
-    <published>2018-03-05T05:50:02.000Z</published>
-    <updated>2019-03-11T09:34:47.540Z</updated>
+    <title>策略模式</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/06/08/designpattern/ce-lue-mo-shi/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/06/08/designpattern/ce-lue-mo-shi/</id>
+    <published>2018-06-08T12:00:00.000Z</published>
+    <updated>2019-03-13T01:08:40.898Z</updated>
     
     <summary type="html">
     
@@ -29,25 +29,25 @@
       
         
         
-          &lt;h1 id=&quot;object&quot;&gt;&lt;a href=&quot;#object&quot; class=&quot;headerlink&quot; title=&quot;object&quot;&gt;&lt;/a&gt;&lt;center&gt;object&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;属性特性&quot;&gt;&lt;a href=&quot;#属性特性&quot;
+          &lt;h1 id=&quot;策略模式&quot;&gt;&lt;a href=&quot;#策略模式&quot; class=&quot;headerlink&quot; title=&quot;策略模式&quot;&gt;&lt;/a&gt;&lt;center&gt;策略模式&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;原理&quot;&gt;&lt;a href=&quot;#原理&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="设计模式" scheme="https://shenah.coding.me/sah.coding.me/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+      <category term="设计模式" scheme="https://shenah.coding.me/sah.coding.me/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
-    <title>this</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/02/11/web/js/this/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/02/11/web/js/this/</id>
-    <published>2018-02-11T03:40:40.000Z</published>
-    <updated>2019-03-11T07:59:11.123Z</updated>
+    <title>代理模式</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/06/07/designpattern/dai-li-mo-shi/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/06/07/designpattern/dai-li-mo-shi/</id>
+    <published>2018-06-07T12:00:00.000Z</published>
+    <updated>2019-03-13T01:08:40.898Z</updated>
     
     <summary type="html">
     
@@ -55,25 +55,25 @@
       
         
         
-          &lt;h1 id=&quot;this的理解&quot;&gt;&lt;a href=&quot;#this的理解&quot; class=&quot;headerlink&quot; title=&quot;this的理解&quot;&gt;&lt;/a&gt;&lt;center&gt;this的理解&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot;
+          &lt;h1 id=&quot;代理模式&quot;&gt;&lt;a href=&quot;#代理模式&quot; class=&quot;headerlink&quot; title=&quot;代理模式&quot;&gt;&lt;/a&gt;&lt;center&gt;代理模式&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;原理&quot;&gt;&lt;a href=&quot;#原理&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="设计模式" scheme="https://shenah.coding.me/sah.coding.me/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+      <category term="设计模式" scheme="https://shenah.coding.me/sah.coding.me/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
-    <title>typeof 与instanceof的区别</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/02/01/web/js/typeof-instanceof/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/02/01/web/js/typeof-instanceof/</id>
-    <published>2018-02-01T06:26:40.000Z</published>
-    <updated>2019-03-11T07:41:42.627Z</updated>
+    <title>单例模式</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/06/06/designpattern/dan-li-mo-shi/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/06/06/designpattern/dan-li-mo-shi/</id>
+    <published>2018-06-06T12:00:00.000Z</published>
+    <updated>2019-03-13T01:08:40.898Z</updated>
     
     <summary type="html">
     
@@ -81,25 +81,25 @@
       
         
         
-          &lt;h1 id=&quot;typeof、instanceof的区别&quot;&gt;&lt;a href=&quot;#typeof、instanceof的区别&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;单例模式&quot;&gt;&lt;a href=&quot;#单例模式&quot; class=&quot;headerlink&quot; title=&quot;单例模式&quot;&gt;&lt;/a&gt;&lt;center&gt;单例模式&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;原理&quot;&gt;&lt;a href=&quot;#原理&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="设计模式" scheme="https://shenah.coding.me/sah.coding.me/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+      <category term="设计模式" scheme="https://shenah.coding.me/sah.coding.me/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
-    <title>class</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/02/01/web/es/class/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/02/01/web/es/class/</id>
-    <published>2018-02-01T02:20:25.000Z</published>
-    <updated>2019-03-11T07:32:08.498Z</updated>
+    <title>迭代器模式</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/06/05/designpattern/die-dai-qi-mo-shi/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/06/05/designpattern/die-dai-qi-mo-shi/</id>
+    <published>2018-06-05T12:00:00.000Z</published>
+    <updated>2019-03-13T01:08:40.898Z</updated>
     
     <summary type="html">
     
@@ -107,27 +107,25 @@
       
         
         
-          &lt;h1 id=&quot;Class&quot;&gt;&lt;a href=&quot;#Class&quot; class=&quot;headerlink&quot; title=&quot;Class&quot;&gt;&lt;/a&gt;&lt;center&gt;Class&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot;
+          &lt;h1 id=&quot;迭代器模式&quot;&gt;&lt;a href=&quot;#迭代器模式&quot; class=&quot;headerlink&quot; title=&quot;迭代器模式&quot;&gt;&lt;/a&gt;&lt;center&gt;迭代器模式&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;原理&quot;&gt;&lt;a href=&quot;#原理&quot;
         
       
     
     </summary>
     
-      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="设计模式" scheme="https://shenah.coding.me/sah.coding.me/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
-    
-      <category term="es6" scheme="https://shenah.coding.me/sah.coding.me/tags/es6/"/>
+      <category term="设计模式" scheme="https://shenah.coding.me/sah.coding.me/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
-    <title>apply、call、bind</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/01/26/web/js/apply-call-bind/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/01/26/web/js/apply-call-bind/</id>
-    <published>2018-01-26T03:35:40.000Z</published>
-    <updated>2019-03-11T06:12:32.632Z</updated>
+    <title>发布-订阅者模式</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/06/04/designpattern/fa-bu-ding-yue-zhe-mo-shi/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/06/04/designpattern/fa-bu-ding-yue-zhe-mo-shi/</id>
+    <published>2018-06-04T12:00:00.000Z</published>
+    <updated>2019-03-13T01:08:40.898Z</updated>
     
     <summary type="html">
     
@@ -135,25 +133,25 @@
       
         
         
-          &lt;h1 id=&quot;apply、call、bind的用法&quot;&gt;&lt;a href=&quot;#apply、call、bind的用法&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;发布-订阅者模式&quot;&gt;&lt;a href=&quot;#发布-订阅者模式&quot; class=&quot;headerlink&quot; title=&quot;发布-订阅者模式&quot;&gt;&lt;/a&gt;&lt;center&gt;发布-订阅者模式&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;原理&quot;&gt;&lt;a href=&quot;#原理&quot;
         
       
     
     </summary>
     
-      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="设计模式" scheme="https://shenah.coding.me/sah.coding.me/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+      <category term="设计模式" scheme="https://shenah.coding.me/sah.coding.me/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
-    <title>防抖与节流</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/01/20/web/js/fang-dou-yu-jie-liu/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/01/20/web/js/fang-dou-yu-jie-liu/</id>
-    <published>2018-01-20T01:22:35.000Z</published>
-    <updated>2019-03-11T06:12:14.421Z</updated>
+    <title>设计模式</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/06/04/designpattern/she-ji-mo-shi/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/06/04/designpattern/she-ji-mo-shi/</id>
+    <published>2018-06-04T06:00:00.000Z</published>
+    <updated>2019-03-13T01:08:40.898Z</updated>
     
     <summary type="html">
     
@@ -161,25 +159,25 @@
       
         
         
-          &lt;h1 id=&quot;防抖与节流&quot;&gt;&lt;a href=&quot;#防抖与节流&quot; class=&quot;headerlink&quot; title=&quot;防抖与节流&quot;&gt;&lt;/a&gt;&lt;center&gt;防抖与节流&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;函数防抖-debounce&quot;&gt;&lt;a
+          &lt;h1 id=&quot;设计模式&quot;&gt;&lt;a href=&quot;#设计模式&quot; class=&quot;headerlink&quot; title=&quot;设计模式&quot;&gt;&lt;/a&gt;&lt;center&gt;设计模式&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;主题&quot;&gt;&lt;a href=&quot;#主题&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="设计模式" scheme="https://shenah.coding.me/sah.coding.me/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+      <category term="设计模式" scheme="https://shenah.coding.me/sah.coding.me/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
-    <title>事件轮询</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/01/14/web/js/shi-jian-lun-xun/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/01/14/web/js/shi-jian-lun-xun/</id>
-    <published>2018-01-14T07:48:32.000Z</published>
-    <updated>2019-03-11T01:34:47.676Z</updated>
+    <title>提高前端性能</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/05/20/web/performance/improveperformance/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/05/20/web/performance/improveperformance/</id>
+    <published>2018-05-20T05:00:00.000Z</published>
+    <updated>2019-03-13T01:08:40.898Z</updated>
     
     <summary type="html">
     
@@ -187,7 +185,7 @@
       
         
         
-          &lt;h1 id=&quot;事件轮询&quot;&gt;&lt;a href=&quot;#事件轮询&quot; class=&quot;headerlink&quot; title=&quot;事件轮询&quot;&gt;&lt;/a&gt;&lt;center&gt;事件轮询&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;解释&quot;&gt;&lt;a href=&quot;#解释&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;提高性能&quot;&gt;&lt;a href=&quot;#提高性能&quot; class=&quot;headerlink&quot; title=&quot;提高性能&quot;&gt;&lt;/a&gt;&lt;center&gt;提高性能&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;网络方面&quot;&gt;&lt;a href=&quot;#网络方面&quot;
         
       
     
@@ -196,16 +194,16 @@
       <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+      <category term="performance" scheme="https://shenah.coding.me/sah.coding.me/tags/performance/"/>
     
   </entry>
   
   <entry>
-    <title>事件</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/01/06/web/js/shi-jian/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/01/06/web/js/shi-jian/</id>
-    <published>2018-01-06T05:00:00.000Z</published>
-    <updated>2019-03-11T06:04:22.094Z</updated>
+    <title>资源的合并与压缩</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/05/14/web/performance/zi-yuan-de-he-bing-yu-ya-suo/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/05/14/web/performance/zi-yuan-de-he-bing-yu-ya-suo/</id>
+    <published>2018-05-14T10:00:00.000Z</published>
+    <updated>2019-03-13T01:08:40.898Z</updated>
     
     <summary type="html">
     
@@ -213,7 +211,7 @@
       
         
         
-          &lt;h1 id=&quot;事件&quot;&gt;&lt;a href=&quot;#事件&quot; class=&quot;headerlink&quot; title=&quot;事件&quot;&gt;&lt;/a&gt;&lt;center&gt;事件&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;事件中的名词&quot;&gt;&lt;a href=&quot;#事件中的名词&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;资源的合并与压缩&quot;&gt;&lt;a href=&quot;#资源的合并与压缩&quot; class=&quot;headerlink&quot;
         
       
     
@@ -222,7 +220,319 @@
       <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+      <category term="performance" scheme="https://shenah.coding.me/sah.coding.me/tags/performance/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css与js的装载与执行</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/05/14/web/performance/css-yu-js-de-zhuang-zai-yu-zhi-xing/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/05/14/web/performance/css-yu-js-de-zhuang-zai-yu-zhi-xing/</id>
+    <published>2018-05-14T02:00:00.000Z</published>
+    <updated>2019-03-13T01:08:40.898Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;css与js的装载与执行&quot;&gt;&lt;a href=&quot;#css与js的装载与执行&quot; class=&quot;headerlink&quot; title=&quot;css与js的装载与执行&quot;&gt;&lt;/a&gt;&lt;center&gt;css与js的装载与执行&lt;/center&gt;&lt;/h1&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="performance" scheme="https://shenah.coding.me/sah.coding.me/tags/performance/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>懒加载与预加载</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/05/13/web/performance/lan-jia-zai-yu-yu-jia-zai/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/05/13/web/performance/lan-jia-zai-yu-yu-jia-zai/</id>
+    <published>2018-05-13T10:00:00.000Z</published>
+    <updated>2019-03-13T01:08:40.898Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;懒加载与预加载&quot;&gt;&lt;a href=&quot;#懒加载与预加载&quot; class=&quot;headerlink&quot; title=&quot;懒加载与预加载&quot;&gt;&lt;/a&gt;&lt;center&gt;懒加载与预加载&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;懒加载-基本对于图片&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="performance" scheme="https://shenah.coding.me/sah.coding.me/tags/performance/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>重绘与回流</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/05/13/web/performance/redrawreflow/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/05/13/web/performance/redrawreflow/</id>
+    <published>2018-05-13T08:00:00.000Z</published>
+    <updated>2019-03-13T01:08:40.898Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;重绘与回流&quot;&gt;&lt;a href=&quot;#重绘与回流&quot; class=&quot;headerlink&quot; title=&quot;重绘与回流&quot;&gt;&lt;/a&gt;&lt;center&gt;重绘与回流&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;重绘-redraw&quot;&gt;&lt;a href=&quot;#重绘-redraw&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="performance" scheme="https://shenah.coding.me/sah.coding.me/tags/performance/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器的存储</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/05/13/web/performance/browserstorage/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/05/13/web/performance/browserstorage/</id>
+    <published>2018-05-13T04:00:00.000Z</published>
+    <updated>2019-03-13T01:08:40.898Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;浏览器的存储&quot;&gt;&lt;a href=&quot;#浏览器的存储&quot; class=&quot;headerlink&quot; title=&quot;浏览器的存储&quot;&gt;&lt;/a&gt;&lt;center&gt;浏览器的存储&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;cookie&quot;&gt;&lt;a href=&quot;#cookie&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="performance" scheme="https://shenah.coding.me/sah.coding.me/tags/performance/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>请求缓存</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/05/12/web/performance/cache/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/05/12/web/performance/cache/</id>
+    <published>2018-05-12T07:00:00.000Z</published>
+    <updated>2019-03-12T09:10:37.009Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;浏览器与服务器之间的缓存策略&quot;&gt;&lt;a href=&quot;#浏览器与服务器之间的缓存策略&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="performance" scheme="https://shenah.coding.me/sah.coding.me/tags/performance/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>抽象相等比较算法</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/05/05/web/operate/chou-xiang-xiang-deng-bi-jiao-suan-fa/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/05/05/web/operate/chou-xiang-xiang-deng-bi-jiao-suan-fa/</id>
+    <published>2018-05-05T10:00:00.000Z</published>
+    <updated>2019-03-12T08:44:14.857Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;抽象相等比较算法&quot;&gt;&lt;a href=&quot;#抽象相等比较算法&quot; class=&quot;headerlink&quot; title=&quot;抽象相等比较算法&quot;&gt;&lt;/a&gt;&lt;center&gt;抽象相等比较算法&lt;/center&gt;&lt;/h1&gt;&lt;p&gt;　　比较运算x==y, 其中x和
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="operate" scheme="https://shenah.coding.me/sah.coding.me/tags/operate/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>跨域请求</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/04/29/web/httprequest/crossdomainrequest/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/04/29/web/httprequest/crossdomainrequest/</id>
+    <published>2018-04-29T06:30:00.000Z</published>
+    <updated>2019-03-12T08:29:58.899Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;跨域请求&quot;&gt;&lt;a href=&quot;#跨域请求&quot; class=&quot;headerlink&quot; title=&quot;跨域请求&quot;&gt;&lt;/a&gt;&lt;center&gt;跨域请求&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;产生原因&quot;&gt;&lt;a href=&quot;#产生原因&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="http" scheme="https://shenah.coding.me/sah.coding.me/tags/http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>上传文件</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/04/25/web/httprequest/uploadfile/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/04/25/web/httprequest/uploadfile/</id>
+    <published>2018-04-25T03:30:00.000Z</published>
+    <updated>2019-03-12T08:07:40.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;上传文件&quot;&gt;&lt;a href=&quot;#上传文件&quot; class=&quot;headerlink&quot; title=&quot;上传文件&quot;&gt;&lt;/a&gt;&lt;center&gt;上传文件&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;form表单提交&quot;&gt;&lt;a href=&quot;#form表单提交&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="http" scheme="https://shenah.coding.me/sah.coding.me/tags/http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>请求头、响应</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/04/25/web/httprequest/ajaxheaddetail/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/04/25/web/httprequest/ajaxheaddetail/</id>
+    <published>2018-04-25T02:00:00.000Z</published>
+    <updated>2019-03-12T07:55:10.205Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;请求头、响应&quot;&gt;&lt;a href=&quot;#请求头、响应&quot; class=&quot;headerlink&quot; title=&quot;请求头、响应&quot;&gt;&lt;/a&gt;&lt;center&gt;请求头、响应&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;请求头的参数的详情&quot;&gt;&lt;a href=&quot;#请求头的参数的详情&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="http" scheme="https://shenah.coding.me/sah.coding.me/tags/http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ajax</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/04/24/web/httprequest/ajax/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/04/24/web/httprequest/ajax/</id>
+    <published>2018-04-24T09:00:00.000Z</published>
+    <updated>2019-03-12T08:05:55.798Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;ajax&quot;&gt;&lt;a href=&quot;#ajax&quot; class=&quot;headerlink&quot; title=&quot;ajax&quot;&gt;&lt;/a&gt;&lt;center&gt;ajax&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;ajax流程&quot;&gt;&lt;a href=&quot;#ajax流程&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="http" scheme="https://shenah.coding.me/sah.coding.me/tags/http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>flex</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/04/15/web/css/flex/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/04/15/web/css/flex/</id>
+    <published>2018-04-15T12:30:00.000Z</published>
+    <updated>2019-03-12T06:55:25.440Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;flex&quot;&gt;&lt;a href=&quot;#flex&quot; class=&quot;headerlink&quot; title=&quot;flex&quot;&gt;&lt;/a&gt;&lt;center&gt;flex&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="css" scheme="https://shenah.coding.me/sah.coding.me/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BFC、IFC、GFC、FFC</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/04/13/web/css/bfc-ifc-gfc-ffc/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/04/13/web/css/bfc-ifc-gfc-ffc/</id>
+    <published>2018-04-13T05:30:00.000Z</published>
+    <updated>2019-03-12T06:18:35.434Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;BFC、IFC、GFC、FFC&quot;&gt;&lt;a href=&quot;#BFC、IFC、GFC、FFC&quot; class=&quot;headerlink&quot; title=&quot;BFC、IFC、GFC、FFC&quot;&gt;&lt;/a&gt;&lt;center&gt;BFC、IFC、GFC、FFC&lt;/center&gt;&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="css" scheme="https://shenah.coding.me/sah.coding.me/tags/css/"/>
     
   </entry>
   
