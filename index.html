@@ -35,7 +35,7 @@
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
-<body oncontextmenu="return false" onselectstart="return false">
+<body  onselectstart="return false">
 
 <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -398,6 +398,30 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     </div>
     
     
+    <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('/medias/featureimages/0.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    <div class="title center-align">ajax</div>
+                    <div class="description center-align">
+                    
+                        ajaxajax流程第一步 创建XMLHttpRequest对象var request = new XMLHttpRequest();
+
+第二步 监听XMLHttpRequest对象里面的readystatechang// 用的属性监听
+/
+                    
+                    </div>
+                    <div class="cover-btns">
+                        <a href="/2018/04/24/web/httprequest/ajax/" class="waves-effect waves-light btn" target="_blank">
+                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
     <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('/medias/featureimages/19.jpg');">
         <div class="container">
             <div class="row">
@@ -459,21 +483,21 @@ css he
     </div>
     
     
-    <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('/medias/featureimages/0.jpg');">
+    <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('/medias/featureimages/9.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
-                    <div class="title center-align">ajax</div>
+                    <div class="title center-align">object</div>
                     <div class="description center-align">
                     
-                        ajaxajax流程第一步 创建XMLHttpRequest对象var request = new XMLHttpRequest();
-
-第二步 监听XMLHttpRequest对象里面的readystatechang// 用的属性监听
-/
+                        object对象特性
+对象的原型(prototype)指向另外一个对象,本对象的属性继承来自它的原型对象
+对象的类(class)是一个标识对象类型的字符串
+对象的扩展标记(extensible flag)指明了在(es5中)是否可以向该对象
                     
                     </div>
                     <div class="cover-btns">
-                        <a href="/2018/04/24/web/httprequest/ajax/" class="waves-effect waves-light btn" target="_blank">
+                        <a href="/2018/03/05/web/js/obj/object/" class="waves-effect waves-light btn" target="_blank">
                             <i class="icon fa fa-eye fa-fw"></i>阅读更多
                         </a>
                     </div>
@@ -499,30 +523,6 @@ css he
                     </div>
                     <div class="cover-btns">
                         <a href="/2018/01/14/web/js/basics/shi-jian-lun-xun/" class="waves-effect waves-light btn" target="_blank">
-                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('/medias/featureimages/9.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col s10 offset-s1">
-                    <div class="title center-align">object</div>
-                    <div class="description center-align">
-                    
-                        object对象特性
-对象的原型(prototype)指向另外一个对象,本对象的属性继承来自它的原型对象
-对象的类(class)是一个标识对象类型的字符串
-对象的扩展标记(extensible flag)指明了在(es5中)是否可以向该对象
-                    
-                    </div>
-                    <div class="cover-btns">
-                        <a href="/2018/03/05/web/js/obj/object/" class="waves-effect waves-light btn" target="_blank">
                             <i class="icon fa fa-eye fa-fw"></i>阅读更多
                         </a>
                     </div>
@@ -689,6 +689,59 @@ $(function () {
     <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
         <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2018/06/16/web/operate/yun-suan-zhong-de-ji-qiao/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="运算中的小技巧">
+                            
+                            <span class="card-title">运算中的小技巧</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary">
+                            
+                                运算中的小技巧
+利用~~进行类型的转换,数字类型
+
+~~true =&gt; 1
+~~false =&gt; 0
+~~”” =&gt; 0
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-06-16
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/前端/" class="post-category" target="_blank">
+                                    前端
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/operate/" target="_blank">
+                            <span class="chip bg-color">operate</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
@@ -1241,55 +1294,6 @@ nodejs提供html-minifier工具
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/05/13/web/performance/browserstorage/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="浏览器的存储">
-                            
-                            <span class="card-title">浏览器的存储</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary">
-                            
-                                浏览器的存储cookie生成方式(cookie)
-http response header中的set-cookie
-js中可以通过docum
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-05-13
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/前端/" class="post-category" target="_blank">
-                                    前端
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/performance/" target="_blank">
-                            <span class="chip bg-color">performance</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
         </div>
     </article>
 
@@ -1323,13 +1327,11 @@ js中可以通过docum
 <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            本站由&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>基于
-            <a href="https://hexo.io/" target="_blank">Hexo</a> 的
-            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
+            本站由基于hexo主题搭建.
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">17.1k</span>
+                <span class="white-color">17.3k</span>
             
 
             

@@ -4,9 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="上传文件, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
-    <meta name="description" content="上传文件form表单提交&amp;lt;form action=&#34;url&#34; method=&#34;get&#34; enctype=&#34;application/x-www-form-urlencoded&#34;&gt;
-    &amp;lt;input type=&#34;text&#34; na">
+    <meta name="keywords" content="运算中的小技巧, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
+    <meta name="description" content="运算中的小技巧
+利用~~进行类型的转换,数字类型
+
+~~true =&amp;gt; 1
+~~false =&amp;gt; 0
+~~”” =&amp;gt; 0
+~~[] =&amp;gt; 0
+~~undefined =&amp;gt; 0
+~~!undefined  =&amp;g">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>上传文件 | 迷一样的自信</title>
+    <title>运算中的小技巧 | 迷一样的自信</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -262,13 +269,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        上传文件
+                        运算中的小技巧
                     </div>
                 </div>
             </div>
@@ -360,8 +367,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/http/" target="_blank">
-                                <span class="chip bg-color">http</span>
+                            <a href="/tags/operate/" target="_blank">
+                                <span class="chip bg-color">operate</span>
                             </a>
                         
                     </div>
@@ -384,14 +391,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-04-25
+                    2018-06-16
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        167
+                        218
                     </div>
                     
 
@@ -414,34 +421,59 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a><center>上传文件</center></h1><h2 id="form表单提交"><a href="#form表单提交" class="headerlink" title="form表单提交"></a>form表单提交</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url<span class="token punctuation">"</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>get<span class="token punctuation">"</span></span> <span class="token attr-name">enctype</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>application/x-www-form-urlencoded<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>input1<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>123456<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>input2<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>abcdefg<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>提交<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
-</code></pre>
+                <h1 id="运算中的小技巧"><a href="#运算中的小技巧" class="headerlink" title="运算中的小技巧"></a><center>运算中的小技巧</center></h1><ul>
+<li><p>利用<code>~~</code>进行类型的转换,数字类型</p>
 <ul>
-<li>post请求,则会把name里面的值通过json字符串传入到后台</li>
-<li>post请求中包含的文件上传enctype=”multipart/form-data”</li>
+<li>~~true =&gt; 1</li>
+<li>~~false =&gt; 0</li>
+<li>~~”” =&gt; 0</li>
+<li>~~[] =&gt; 0</li>
+<li>~~undefined =&gt; 0</li>
+<li>~~!undefined  =&gt; 1</li>
+<li>~~null  =&gt; 0</li>
+<li>~~!null  =&gt; 1</li>
 </ul>
-<h2 id="ajax上传文件"><a href="#ajax上传文件" class="headerlink" title="ajax上传文件"></a>ajax上传文件</h2><pre class=" language-js"><code class="language-js"><span class="token keyword">let</span> request <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-request<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"readystatechange"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>evnent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token comment" spellcheck="true">// 这里要做判断</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-request<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">"post"</span><span class="token punctuation">,</span> <span class="token string">"url"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">let</span> formdata <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FormData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 创建formData</span>
-<span class="token keyword">let</span> inputs <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"input"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> inputs<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">let</span> input <span class="token operator">=</span> inputs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>input<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">"file"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    formdata<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"file"</span><span class="token punctuation">,</span> input<span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">// 假如input的类型都是text</span>
-    formdata<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>input<span class="token punctuation">.</span>name<span class="token punctuation">,</span> input<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">// send()会自动设置Content-Type头</span>
-request<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>formdata<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</li>
+<li><p>sring强制转换为数字</p>
+<ul>
+<li>‘32’ * 1 =&gt; 32</li>
+<li>‘ds’ * 1 =&gt; NaN</li>
+<li>null * 1 =&gt; 0</li>
+<li>undefined * 1 =&gt; NaN</li>
+<li>1 * { valueOf: ()=&gt;’3’ } =&gt; 3</li>
+</ul>
+</li>
+<li><p>用+号</p>
+<ul>
+<li>+’123’ =&gt; 123</li>
+<li>+’ds’  =&gt; NaN</li>
+<li>+’’ =&gt; 0</li>
+<li>+null =&gt; 0</li>
+<li>+undefined =&gt; NaN</li>
+<li>+{ valueOf: ()=&gt;’3’ } =&gt; 3</li>
+</ul>
+</li>
+<li><p>被当做false的值</p>
+<ul>
+<li>false</li>
+<li>空字符串</li>
+<li>0</li>
+<li>null</li>
+<li>undefined</li>
+<li>NaN</li>
+</ul>
+</li>
+<li><p>当对象为<code>null</code>、<code>空字符串</code>、<code>undefined</code> =&gt; obj || ‘–’</p>
+</li>
+<li>将<code>&quot;true&quot;、&quot;false&quot;</code> =&gt; (/^true$/i).test(bool) // true或者false</li>
+<li>某个类型<code>强制转化为boolean类型</code> =&gt; !!a</li>
+<li>把字符串作为URI组件进行编码 =&gt; encodeURIComponent(URIstring)</li>
+<li>对中文和特殊符号进行解码 =&gt; decodeURIComponent(URIstring)</li>
+<li>boolean过来数组中所拥有为假的数组</li>
+</ul>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> compact <span class="token operator">=</span> arr <span class="token operator">=</span><span class="token operator">></span> arr<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// [ 1, 2, 3, 'a', 's', 34 ]</span>
+<span class="token function">compact</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">"a"</span><span class="token punctuation">,</span> <span class="token string">"e"</span> <span class="token operator">*</span> <span class="token number">23</span><span class="token punctuation">,</span> <span class="token number">NaN</span><span class="token punctuation">,</span> <span class="token string">"s"</span><span class="token punctuation">,</span> <span class="token number">34</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 
             </div>
@@ -590,7 +622,7 @@ request<span class="token punctuation">.</span><span class="token function">send
                     </span>
                     <a href="https://shenah.coding.me/sah.coding.me" class="b-link-green">迷一样的自信</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/04/25/web/httprequest/uploadfile/" class="b-link-green">上传文件</a>
+                    <a href="/2018/06/16/web/operate/yun-suan-zhong-de-ji-qiao/" class="b-link-green">运算中的小技巧</a>
                 </p>
             </div>
         </div>
@@ -612,7 +644,7 @@ request<span class="token punctuation">.</span><span class="token function">send
         repo: 'sah.github.io',
         owner: 'shenanheng',
         admin: ["shenanheng"],
-        id: '2018-04-25T11-30-00',
+        id: '2018-06-16T10-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -635,71 +667,31 @@ request<span class="token punctuation">.</span><span class="token function">send
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2018/04/29/web/httprequest/crossdomainrequest/">
+                <a href="/2018/06/16/web/operate/yun-suan-zhong-de-ji-qiao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="跨域请求">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="运算中的小技巧">
                         
-                        <span class="card-title">跨域请求</span>
+                        <span class="card-title">运算中的小技巧</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">跨域请求产生原因　　同源策略:是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。可以说Web是构建在同源策略基础之上的，浏览器只是针对同源策略的一种实现
-　　同源:指代域名(www.wi</div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-04-29
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/前端/" class="post-category" target="_blank">
-                                    前端
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/http/" target="_blank">
-                        <span class="chip bg-color">http</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2018/04/25/web/httprequest/ajaxheaddetail/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="请求头、响应">
-                        
-                        <span class="card-title">请求头、响应</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">请求头、响应请求头的参数的详情
-Accept:浏览器端可以接受的媒体类型
+                    <div class="summary">运算中的小技巧
+利用~~进行类型的转换,数字类型
 
-Accept: text/html 代表浏览器可以接受服务器回发的类型为 text/html 也就是我们常说的html文档,如果服务器无法返回text/html类型</div>
+~~true =&gt; 1
+~~false =&gt; 0
+~~”” =&gt; 0
+~~[] =&gt; 0
+~~undefined =&gt; 0
+~~!undefined  =&g</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-04-25
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-06-16
                             </span>
                         <span class="publish-author">
                             
@@ -713,11 +705,61 @@ Accept: text/html 代表浏览器可以接受服务器回发的类型为 text/ht
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/http/" target="_blank">
-                        <span class="chip bg-color">http</span>
+                    <a href="/tags/operate/" target="_blank">
+                        <span class="chip bg-color">operate</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2018/06/08/designpattern/ce-lue-mo-shi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="策略模式">
+                        
+                        <span class="card-title">策略模式</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">策略模式原理　　定义一系列的算法，把它们一个个封装起来，并且使它们可以相互替换
+用途　　根据实际的场景,运用对应的策略
+组成
+策略类  =&gt; 封装了具体的算法，并负责具体的计算过程
+环境类 =&gt; Context 接受客户的请求，</div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-06-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/设计模式/" class="post-category" target="_blank">
+                                    设计模式
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/设计模式/" target="_blank">
+                        <span class="chip bg-color">设计模式</span>
                     </a>
                     
                 </div>
