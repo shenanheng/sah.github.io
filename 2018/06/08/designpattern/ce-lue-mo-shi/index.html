@@ -1,15 +1,11 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
-
-
-<head><meta name="generator" content="Hexo 3.8.0">
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta name="keywords" content="策略模式, html,css,js,vue,react,webpack,node,es6,前端,shenanheng,shenah">
     <meta name="description" content="策略模式原理　　定义一系列的算法，把它们一个个封装起来，并且使它们可以相互替换
 用途　　根据实际的场景,运用对应的策略
 组成
-策略类  =&amp;gt; 封装了具体的算法，并负责具体的计算过程
-环境类 =&amp;gt; Context 接受客户的请求，">
+策略类  => 封装了具体的算法，并负责具体的计算过程
+环境类 => Context 接受客户的请求，随后把请求委">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -39,7 +35,7 @@
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
-<body  onselectstart="return false">
+<body onselectstart="return false">
 
 <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -250,7 +246,7 @@
 </style>
 
 <a href="https://github.com/shenanheng" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewbox="0 0 250 250" aria-hidden="true">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
         <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
         <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
@@ -386,21 +382,21 @@
 
             <div class="post-info">
                 <div class="post-date info-break-policy">
-                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:  
                     2018-06-08
                 </div>
 
                 
                     
                     <div class="info-break-policy">
-                        <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        377
+                        <i class="fa fa-file-word-o fa-fw"></i>文章字数:  
+                        375
                     </div>
                     
 
                     
                     <div class="info-break-policy">
-                        <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                        <i class="fa fa-clock-o fa-fw"></i>阅读时长:  
                         1 分
                     </div>
                     
@@ -408,7 +404,7 @@
 				
 				
                     <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <i class="fa fa-eye fa-fw"></i>阅读次数:  
                         <span id="busuanzi_value_page_pv"></span>
                     </div>
 				
@@ -417,11 +413,11 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="策略模式"><a href="#策略模式" class="headerlink" title="策略模式"></a><center>策略模式</center></h1><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>　　<code>定义一系列的算法，把它们一个个封装起来，并且使它们可以相互替换</code></p>
+                <meta name="generator" content="Hexo 3.8.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><h1 id="策略模式"><a href="#策略模式" class="headerlink" title="策略模式"></a><center>策略模式</center></h1><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>　　<code>定义一系列的算法，把它们一个个封装起来，并且使它们可以相互替换</code></p>
 <h1 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h1><p>　　<code>根据实际的场景,运用对应的策略</code></p>
 <h2 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h2><ul>
-<li>策略类  =&gt; 封装了具体的算法，并负责具体的计算过程</li>
-<li>环境类 =&gt; Context 接受客户的请求，随后把请求委托给某一个策略类</li>
+<li>策略类  => 封装了具体的算法，并负责具体的计算过程</li>
+<li>环境类 => Context 接受客户的请求，随后把请求委托给某一个策略类</li>
 </ul>
 <h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
 <li>利用组合、委托和多态等技术和思想，可以有效地避免多重条件选择语句</li>
@@ -604,7 +600,7 @@
             <div class="reprint">
                 <p>
                     <span class="reprint-tip">
-                        <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
+                        <i class="fa fa-exclamation-circle"></i>  转载请注明:
                     </span>
                     <a href="https://shenah.coding.me/sah.coding.me" class="b-link-green">迷一样的自信</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
@@ -653,7 +649,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-chevron-left"></i> 上一篇</div>
             <div class="card">
                 <a href="/2018/06/16/web/operate/yun-suan-zhong-de-ji-qiao/">
                     <div class="card-image">
@@ -668,12 +664,14 @@
                     <div class="summary">运算中的小技巧
 利用~~进行类型的转换,数字类型
 
-~~true =&gt; 1
-~~false =&gt; 0
-~~”” =&gt; 0
-~~[] =&gt; 0
-~~undefined =&gt; 0
-~~!undefined  =&g</div>
+~~true => 1
+~~false => 0
+~~”” => 0
+~~[] => 0
+~~undefined => 0
+~~!undefined  => 1
+~~null  => 0
+</div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2018-06-16
@@ -705,7 +703,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+                下一篇 <i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2018/06/07/designpattern/dai-li-mo-shi/">
@@ -757,7 +755,7 @@
     </div>
     <div class="col l3 hide-on-med-and-down">
         <div class="toc-widget">
-            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div class="toc-title"><i class="fa fa-list-alt"></i>  目录</div>
             <div id="toc-content"></div>
         </div>
     </div>
@@ -812,8 +810,8 @@
             本站由基于hexo主题搭建.
 
             
-                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">17.3k</span>
+                 <i class="fa fa-area-chart"></i> 站点总字数: 
+                <span class="white-color">17.2k</span>
             
 
             
@@ -828,7 +826,7 @@
                 
                 <span id="busuanzi_container_site_uv">
                     <i class="fa fa-users"></i>
-                    次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                    次, 访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
                 </span>
                 
             
@@ -866,7 +864,7 @@
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
-            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <span class="title"><i class="fa fa-search"></i>  搜索</span>
             <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input">
         </div>
         <div id="searchResult"></div>
@@ -904,5 +902,5 @@ $(function () {
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
 
 
-</body>
-</html>
+
+<script type="text/javascript" charset="utf-8" src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script></body></html>
