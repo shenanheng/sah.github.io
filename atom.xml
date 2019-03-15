@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shenah.coding.me/sah.coding.me/"/>
-  <updated>2019-03-13T09:27:47.475Z</updated>
+  <updated>2019-03-15T09:16:26.723Z</updated>
   <id>https://shenah.coding.me/sah.coding.me/</id>
   
   <author>
@@ -15,6 +15,112 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/07/07/git/git/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/07/07/git/git/</id>
+    <published>2018-07-07T09:00:00.000Z</published>
+    <updated>2019-03-15T09:16:26.723Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;git&quot;&gt;&lt;a href=&quot;#git&quot; class=&quot;headerlink&quot; title=&quot;git&quot;&gt;&lt;/a&gt;&lt;center&gt;git&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;三种状态-已追踪的文件&quot;&gt;&lt;a href=&quot;#三种状态-已追踪的文件&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="代码管理工具" scheme="https://shenah.coding.me/sah.coding.me/categories/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="git" scheme="https://shenah.coding.me/sah.coding.me/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>window对象</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/06/23/web/js/obj/window/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/06/23/web/js/obj/window/</id>
+    <published>2018-06-23T01:00:00.000Z</published>
+    <updated>2019-03-15T08:40:04.874Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;window对象&quot;&gt;&lt;a href=&quot;#window对象&quot; class=&quot;headerlink&quot; title=&quot;window对象&quot;&gt;&lt;/a&gt;&lt;center&gt;window对象&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;document&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="https://shenah.coding.me/sah.coding.me/tags/js/"/>
+    
+      <category term="object" scheme="https://shenah.coding.me/sah.coding.me/tags/object/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图形的制作</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/06/17/web/css/tu-xing-de-zhi-zuo/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/06/17/web/css/tu-xing-de-zhi-zuo/</id>
+    <published>2018-06-17T06:00:00.000Z</published>
+    <updated>2019-03-15T08:31:33.441Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;图形的制作&quot;&gt;&lt;a href=&quot;#图形的制作&quot; class=&quot;headerlink&quot; title=&quot;图形的制作&quot;&gt;&lt;/a&gt;&lt;center&gt;图形的制作&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;圆形&quot;&gt;&lt;a href=&quot;#圆形&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="css" scheme="https://shenah.coding.me/sah.coding.me/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小功能的实现</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/06/17/web/smallfunction/smallfunction/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/06/17/web/smallfunction/smallfunction/</id>
+    <published>2018-06-17T05:00:00.000Z</published>
+    <updated>2019-03-15T08:28:12.266Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;小功能的实现&quot;&gt;&lt;a href=&quot;#小功能的实现&quot; class=&quot;headerlink&quot; title=&quot;小功能的实现&quot;&gt;&lt;/a&gt;&lt;center&gt;小功能的实现&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;仿照浏览器的复制&quot;&gt;&lt;a href=&quot;#仿照浏览器的复制&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="小功能" scheme="https://shenah.coding.me/sah.coding.me/tags/%E5%B0%8F%E5%8A%9F%E8%83%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>运算中的小技巧</title>
@@ -429,110 +535,6 @@
     
     
       <category term="http" scheme="https://shenah.coding.me/sah.coding.me/tags/http/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>上传文件</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/04/25/web/httprequest/uploadfile/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/04/25/web/httprequest/uploadfile/</id>
-    <published>2018-04-25T03:30:00.000Z</published>
-    <updated>2019-03-12T08:07:40.498Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;上传文件&quot;&gt;&lt;a href=&quot;#上传文件&quot; class=&quot;headerlink&quot; title=&quot;上传文件&quot;&gt;&lt;/a&gt;&lt;center&gt;上传文件&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;form表单提交&quot;&gt;&lt;a href=&quot;#form表单提交&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="http" scheme="https://shenah.coding.me/sah.coding.me/tags/http/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>请求头、响应</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/04/25/web/httprequest/ajaxheaddetail/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/04/25/web/httprequest/ajaxheaddetail/</id>
-    <published>2018-04-25T02:00:00.000Z</published>
-    <updated>2019-03-12T07:55:10.205Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;请求头、响应&quot;&gt;&lt;a href=&quot;#请求头、响应&quot; class=&quot;headerlink&quot; title=&quot;请求头、响应&quot;&gt;&lt;/a&gt;&lt;center&gt;请求头、响应&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;请求头的参数的详情&quot;&gt;&lt;a href=&quot;#请求头的参数的详情&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="http" scheme="https://shenah.coding.me/sah.coding.me/tags/http/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ajax</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/04/24/web/httprequest/ajax/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/04/24/web/httprequest/ajax/</id>
-    <published>2018-04-24T09:00:00.000Z</published>
-    <updated>2019-03-12T08:05:55.798Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;ajax&quot;&gt;&lt;a href=&quot;#ajax&quot; class=&quot;headerlink&quot; title=&quot;ajax&quot;&gt;&lt;/a&gt;&lt;center&gt;ajax&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;ajax流程&quot;&gt;&lt;a href=&quot;#ajax流程&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="http" scheme="https://shenah.coding.me/sah.coding.me/tags/http/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>flex</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/04/15/web/css/flex/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/04/15/web/css/flex/</id>
-    <published>2018-04-15T12:30:00.000Z</published>
-    <updated>2019-03-12T06:55:25.440Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;flex&quot;&gt;&lt;a href=&quot;#flex&quot; class=&quot;headerlink&quot; title=&quot;flex&quot;&gt;&lt;/a&gt;&lt;center&gt;flex&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="css" scheme="https://shenah.coding.me/sah.coding.me/tags/css/"/>
     
   </entry>
   
