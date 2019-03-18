@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shenah.coding.me/sah.coding.me/"/>
-  <updated>2019-03-15T09:16:26.723Z</updated>
+  <updated>2019-03-18T03:39:03.512Z</updated>
   <id>https://shenah.coding.me/sah.coding.me/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git的配置</title>
+    <link href="https://shenah.coding.me/sah.coding.me/2018/07/07/git/git-config/"/>
+    <id>https://shenah.coding.me/sah.coding.me/2018/07/07/git/git-config/</id>
+    <published>2018-07-07T10:00:00.000Z</published>
+    <updated>2019-03-18T03:39:03.512Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;git的配置&quot;&gt;&lt;a href=&quot;#git的配置&quot; class=&quot;headerlink&quot; title=&quot;git的配置&quot;&gt;&lt;/a&gt;&lt;center&gt;git的配置&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;基本命令&quot;&gt;&lt;a href=&quot;#基本命令&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="代码管理工具" scheme="https://shenah.coding.me/sah.coding.me/categories/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="git" scheme="https://shenah.coding.me/sah.coding.me/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>git</title>
@@ -509,32 +535,6 @@
     
     
       <category term="operate" scheme="https://shenah.coding.me/sah.coding.me/tags/operate/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>跨域请求</title>
-    <link href="https://shenah.coding.me/sah.coding.me/2018/04/29/web/httprequest/crossdomainrequest/"/>
-    <id>https://shenah.coding.me/sah.coding.me/2018/04/29/web/httprequest/crossdomainrequest/</id>
-    <published>2018-04-29T06:30:00.000Z</published>
-    <updated>2019-03-12T08:29:58.899Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;跨域请求&quot;&gt;&lt;a href=&quot;#跨域请求&quot; class=&quot;headerlink&quot; title=&quot;跨域请求&quot;&gt;&lt;/a&gt;&lt;center&gt;跨域请求&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;产生原因&quot;&gt;&lt;a href=&quot;#产生原因&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="前端" scheme="https://shenah.coding.me/sah.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="http" scheme="https://shenah.coding.me/sah.coding.me/tags/http/"/>
     
   </entry>
   

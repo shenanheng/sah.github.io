@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>git的配置</title>
+      <link href="/2018/07/07/git/git-config/"/>
+      <url>/2018/07/07/git/git-config/</url>
+      
+        <content type="html"><![CDATA[<h1 id="git的配置"><a href="#git的配置" class="headerlink" title="git的配置"></a><center>git的配置</center></h1><h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><ul><li>git config –list  // 查看git上所有的配置</li><li>git config <code>--global alias.st status</code> (将status配置成st)</li></ul><h2 id="用户配置"><a href="#用户配置" class="headerlink" title="用户配置"></a>用户配置</h2><h3 id="用户整体配置"><a href="#用户整体配置" class="headerlink" title="用户整体配置"></a>用户整体配置</h3><ul><li>git config <code>--global user.name &#39;XXX&#39;</code></li><li>git config <code>--global user.email  &#39;XXX&#39;</code></li></ul><h3 id="用户局部配置"><a href="#用户局部配置" class="headerlink" title="用户局部配置"></a>用户局部配置</h3><ul><li><p>第一种</p><ul><li>git config  user.name ‘XXX’</li><li>git config  user.email  ‘XXX’</li></ul></li><li><p>第二种</p><ul><li>git config <code>--local  user.name &#39;XXX&#39;</code></li><li>git config <code>--local  user.email &#39;XXX&#39;</code>　　<h2 id="config的优先级"><a href="#config的优先级" class="headerlink" title="config的优先级"></a>config的优先级</h2></li></ul></li></ul><p>　　<code>local &gt; global &gt; system</code></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 代码管理工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git</title>
       <link href="/2018/07/07/git/git/"/>
       <url>/2018/07/07/git/git/</url>
